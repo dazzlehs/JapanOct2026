@@ -73,7 +73,7 @@
 
   /* ===== TOP NAV ===== */
   .topnav{position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:3px dashed var(--border); padding:12px 0;}
-  .topnav-inner{display:flex; gap:10px; overflow-x:auto; max-width:1000px; margin:0 auto; padding:0 20px;}
+  .topnav-inner{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:1000px; margin:0 auto; padding:0 20px;}
   .topnav a{flex:0 0 auto; text-decoration:none; font-size:15px; color:var(--fg); background:var(--paper-white);
     border:2px solid var(--border); border-radius:var(--wobbly-sm); padding:6px 16px; white-space:nowrap;
     box-shadow:3px 3px 0 var(--border); transition:transform .1s, box-shadow .1s;}
@@ -227,7 +227,6 @@
     <a href="#itinerary">แผนเส้นทางรายวัน</a>
     <a href="#logistics">ข้อมูลสำคัญ</a>
     <a href="#checklist">Checklist</a>
-    <a href="#decisions">สรุปการตัดสินใจ</a>
   </div>
 </nav>
 
@@ -344,30 +343,15 @@
     <p class="section-title wavy-u">✅ Checklist จองล่วงหน้า</p>
     <div class="card" style="padding:8px 22px; margin-top:16px; border-radius:var(--wobbly-md); transform:rotate(.4deg);">
       <ul class="checklist">
-        <li><span class="box"></span>คาร์ซีท 4 ตัว + ETC (แจ้งบริษัทรถเช่าเพิ่มเติม)</li>
         <li><span class="box"></span>บัตร Maxell Aqua Park Shinagawa (e-ticket) — 17 ต.ค.</li>
         <li><span class="box"></span>ตั๋วกระเช้า Kachi Kachi Yama Ropeway — 13 ต.ค. (ซื้อหน้างานได้)</li>
         <li><span class="box"></span>บัตรเข้า Tobu World Square — 9 ต.ค. (ซื้อหน้างานได้)</li>
-        <li><span class="box"></span>ที่จอดรถ 2 คันที่บ้านโตเกียว + จองที่จอดวันที่ 16 ล่วงหน้า</li>
         <li><span class="box"></span>จองร้านอาหารกลุ่ม 11 คน: Kyuraku (8 ต.ค.), ร้านเย็นที่คุซัทสึ (10–11 ต.ค.)</li>
         <li><span class="box"></span>บัตร Tokyo Skytree (ถ้าจะขึ้น)</li>
-        <li><span class="box"></span>ประกันเดินทางทุกคน (รวมเงื่อนไขคนท้อง)</li>
-        <li><span class="box"></span>IDP + ใบขับขี่ไทย ของคนขับทุกคน</li>
-        <li><span class="box"></span>eSIM / pocket wifi 2 ตัว (คนละคัน)</li>
       </ul>
     </div>
   </section>
 
-  <section id="decisions" class="ref">
-    <p class="section-title wavy-u">✅ สรุปการตัดสินใจล่าสุด</p>
-    <div style="margin-top:16px;">
-      <div class="qa-item"><b>9 ต.ค. นิกโก้</b> → เปลี่ยนเป็น Tobu World Square (ทางเลือก EDO WONDERLAND ยังใส่ไว้เผื่ออยากสลับ)</div>
-      <div class="qa-item"><b>13 ต.ค. คาวากุจิโกะ</b> → ใช้แผน B: Oishi Park + กระเช้า Kachi Kachi Yama + หมู่บ้านโบราณ Saiko Iyashi-no-Sato Nenba</div>
-      <div class="qa-item"><b>18 ต.ค. วันช็อปปิ้ง</b> → ยืนยันโซนอาซากุสะ–สกายทรี</div>
-      <div class="qa-item"><b>17 ต.ค. Aqua Park</b> → ดูโชว์โลมารอบเที่ยง (13:00) แล้วปล่อยอิสระ ไม่รอโชว์รอบกลางคืน</div>
-      <div class="qa-item"><b>กระเป๋าวันสุดท้าย</b> → ขนไปเองกับรถตู้ 2 คัน วันที่ 19 ต.ค. ไม่ส่ง Yamato ช่วงท้ายทริปแล้ว</div>
-    </div>
-  </section>
 
 </main>
 
