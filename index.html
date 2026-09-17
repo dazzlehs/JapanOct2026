@@ -45,24 +45,13 @@
   }
 
   /* ===== HERO ===== */
-  .hero{position:relative; padding:60px 24px 50px; text-align:center; overflow:hidden;}
+  .hero{position:relative; padding:50px 24px 36px; text-align:center; overflow:hidden;}
   .hero-eyebrow{display:inline-block; font-size:16px; color:var(--paper-white); background:var(--accent2);
     padding:4px 16px; border:2px solid var(--border); border-radius:var(--wobbly-sm);
     box-shadow:3px 3px 0 var(--border); transform:rotate(-2deg); margin:0 0 18px;}
   .hero h1{font-size:clamp(34px,7vw,58px); margin:0 0 6px; position:relative; display:inline-block;}
   .hero h1 .bang{color:var(--accent); display:inline-block; transform:rotate(8deg); animation:bounce 3s ease-in-out infinite;}
-  .hero .dates{font-size:18px; color:var(--fg); margin:2px 0 28px;}
-  .hero-stats{display:flex; justify-content:center; flex-wrap:wrap; gap:16px; max-width:720px; margin:0 auto;}
-  .stat{background:var(--paper-white); border:3px solid var(--border); padding:12px 18px; min-width:96px;
-    box-shadow:4px 4px 0 var(--border); text-align:center;}
-  .stat:nth-child(1){border-radius:var(--wobbly); transform:rotate(-2deg);}
-  .stat:nth-child(2){border-radius:var(--wobbly-2); transform:rotate(1.5deg);}
-  .stat:nth-child(3){border-radius:var(--wobbly-md); transform:rotate(-1deg);}
-  .stat:nth-child(4){border-radius:var(--wobbly-2); transform:rotate(2deg);}
-  .stat:nth-child(5){border-radius:var(--wobbly); transform:rotate(-1.5deg);}
-  .stat:hover{transform:rotate(0deg) scale(1.04); transition:transform .15s;}
-  .stat .num{font-family:'Mali',cursive; font-size:24px; font-weight:700; color:var(--accent2); display:block;}
-  .stat .lbl{font-size:13px; color:var(--fg);}
+  .hero .dates{font-size:18px; color:var(--fg); margin:2px 0 0;}
   .hero-arrow{display:none;}
   @media (min-width:768px){
     .hero-arrow{display:block; position:absolute; right:8%; top:30px; width:90px; opacity:.85;
@@ -73,7 +62,7 @@
 
   /* ===== TOP NAV ===== */
   .topnav{position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:3px dashed var(--border); padding:12px 0;}
-  .topnav-inner{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:1000px; margin:0 auto; padding:0 20px;}
+  .topnav-inner{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:1200px; margin:0 auto; padding:0 20px;}
   .topnav a{flex:0 0 auto; text-decoration:none; font-size:15px; color:var(--fg); background:var(--paper-white);
     border:2px solid var(--border); border-radius:var(--wobbly-sm); padding:6px 16px; white-space:nowrap;
     box-shadow:3px 3px 0 var(--border); transition:transform .1s, box-shadow .1s;}
@@ -82,88 +71,70 @@
   .topnav a:hover{background:var(--accent); color:#fff; border-color:var(--border);
     box-shadow:1px 1px 0 var(--border); transform:translate(2px,2px) rotate(0deg);}
 
-  main{max-width:920px; margin:0 auto; padding:48px 20px 20px;}
+  main{max-width:1440px; margin:0 auto; padding:44px 28px 20px;}
   .section-title{font-size:24px; font-weight:700; margin:0 0 4px; display:inline-block;}
-  .section-lede{color:var(--fg); font-size:15px; margin:0 0 26px; opacity:.75;}
+  .section-lede{color:var(--fg); font-size:15px; margin:0 0 20px; opacity:.75;}
 
-  /* sticky note callout */
-  .callout{background:var(--postit); border:2px solid var(--border); border-radius:var(--wobbly-md);
-    padding:20px 24px; margin:0 0 40px; box-shadow:6px 6px 0 var(--border); transform:rotate(-1deg); position:relative;}
-  .callout::before{content:"📌"; position:absolute; top:-16px; left:50%; transform:translateX(-50%) rotate(-10deg); font-size:22px;}
-  .callout ol{margin:0; padding-left:22px;} .callout li{margin-bottom:10px; font-size:15px;}
+  /* ===== DAY JUMP STRIP ===== */
+  .dayjump{display:flex; gap:9px; overflow-x:auto; padding:4px 4px 20px; -webkit-overflow-scrolling:touch;}
+  .dayjump a{flex:0 0 auto; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    width:52px; height:52px; text-decoration:none; color:var(--fg); background:var(--paper-white);
+    border:2px solid var(--border); border-radius:50%; box-shadow:3px 3px 0 var(--border);
+    font-family:'Mali',cursive; transition:transform .1s, box-shadow .1s;}
+  .dayjump a b{font-size:16px; line-height:1;}
+  .dayjump a span{font-size:9px; opacity:.7;}
+  .dayjump a:hover{background:var(--accent); color:#fff; transform:translate(2px,2px); box-shadow:1px 1px 0 var(--border);}
 
-  /* ===== OVERVIEW ===== */
-  .overview{margin-bottom:48px;}
-  .ov-card{background:var(--paper-white); border:2px solid var(--border); border-radius:var(--wobbly-md);
-    padding:6px 22px; box-shadow:5px 5px 0 var(--border);}
-  .ov-row{display:grid; grid-template-columns:84px 1fr; gap:16px; padding:10px 0; border-bottom:2px dashed var(--muted);}
-  .ov-row:last-child{border-bottom:none;}
-  .ov-date{font-size:14px; color:var(--accent2); font-weight:700;}
-  .ov-body span{color:var(--fg); font-size:14.5px; opacity:.8;}
-
-  /* ===== INTERACTIVE ITINERARY ===== */
-  .itinerary-wrap{border:3px solid var(--border); border-radius:var(--wobbly-md); overflow:hidden; margin-bottom:48px;
-    box-shadow:7px 7px 0 var(--border); background:var(--paper-white);}
-  .layout{display:grid; grid-template-columns:360px 1fr; height:660px;}
-  .left{overflow:hidden; display:flex; flex-direction:column; background:var(--muted); border-right:3px dashed var(--border);}
-  .brand{padding:16px 18px 10px; border-bottom:2px dashed var(--border); flex:0 0 auto;}
-  .brand b{font-size:17px; font-weight:700;}
-  .brand p{margin:2px 0 0; font-size:13px; opacity:.7;}
-  .daylist{display:flex; flex-direction:column; gap:6px; padding:10px; overflow-y:auto; flex:0 1 auto; max-height:34vh; border-bottom:2px dashed var(--border);}
-  .daybtn{display:flex; align-items:center; gap:10px; text-align:left; background:var(--paper-white);
-    border:2px solid var(--border); border-radius:var(--wobbly-sm); padding:7px 10px; cursor:pointer;
-    font-family:'Mali',cursive; color:var(--fg); box-shadow:2px 2px 0 var(--border); transition:transform .1s, box-shadow .1s;}
-  .daybtn:nth-child(odd){transform:rotate(-.6deg);}
-  .daybtn:nth-child(even){transform:rotate(.6deg);}
-  .daybtn:hover{transform:translate(1px,1px) rotate(0deg); box-shadow:1px 1px 0 var(--border);}
-  .daybtn.active{background:var(--postit); box-shadow:1px 1px 0 var(--border); transform:translate(2px,2px) rotate(0deg);}
-  .daybtn .num{flex:0 0 auto; width:24px; height:24px; border-radius:50%; background:var(--accent2); color:#fff;
-    font-size:11.5px; font-weight:700; display:flex; align-items:center; justify-content:center; border:2px solid var(--border);}
-  .daybtn.active .num{background:var(--accent);}
-  .daybtn .lbl{display:flex; flex-direction:column; gap:1px; min-width:0;}
-  .daybtn .lbl b{font-size:13px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-  .daybtn .lbl span{font-size:11px; opacity:.7; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-  .routewrap{flex:1 1 auto; overflow:auto; padding:14px; display:flex; flex-direction:column;}
-  .routewrap svg{width:100%; height:auto; flex:1 1 auto;}
-  .legend{display:flex; gap:14px; font-size:11.5px; opacity:.75; padding-top:8px;}
-  .legend span{display:flex; align-items:center; gap:5px;}
-  .legend i{width:9px; height:9px; border-radius:50%; display:inline-block;}
-  .right{padding:24px 28px 32px; overflow-y:auto; background:var(--paper-white);}
-  .daytitle{margin-bottom:18px;}
-  .daytitle .tag{display:inline-block; font-size:12.5px; color:#fff; background:var(--accent2); border:2px solid var(--border);
+  /* ===== DAY SECTIONS ===== */
+  .day{margin-bottom:52px; padding-bottom:6px; border-bottom:3px dashed var(--muted); scroll-margin-top:76px;}
+  .day:last-child{border-bottom:none;}
+  .day-head{margin-bottom:18px;}
+  .day-head .tag{display:inline-block; font-size:12.5px; color:#fff; background:var(--accent2); border:2px solid var(--border);
     border-radius:var(--wobbly-sm); padding:2px 10px; transform:rotate(-1.5deg); box-shadow:2px 2px 0 var(--border);}
-  .daytitle h3{font-size:23px; margin:8px 0 3px;}
-  .daytitle .sub{opacity:.7; font-size:14px;}
+  .day-head h3{font-size:24px; margin:8px 0 3px;}
+  .day-head .sub{opacity:.72; font-size:14.5px;}
+
+  .day-grid{display:grid; grid-template-columns:290px 1fr; gap:26px; align-items:start;}
+
+  /* gallery (highlight places / photos) */
+  .gallery{display:flex; flex-direction:column; gap:10px; position:sticky; top:80px;}
+  .gcard{display:flex; align-items:center; gap:12px; background:var(--paper-white); border:2px solid var(--border);
+    border-radius:var(--wobbly-sm); padding:9px 12px; text-decoration:none; color:var(--fg);
+    box-shadow:3px 3px 0 var(--border); transition:transform .1s, box-shadow .1s;}
+  .gallery .gcard:nth-child(odd){transform:rotate(-.7deg);}
+  .gallery .gcard:nth-child(even){transform:rotate(.7deg);}
+  .gcard:hover{transform:translate(2px,2px) rotate(0deg); box-shadow:1px 1px 0 var(--border); background:var(--postit);}
+  .gicon{flex:0 0 auto; width:40px; height:40px; border-radius:50%; background:var(--muted);
+    border:2px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:20px;}
+  .gtext{min-width:0;}
+  .gtext b{display:block; font-size:13.5px; line-height:1.25; overflow-wrap:anywhere;}
+  .gtext span{font-size:11px; opacity:.7; display:block;}
+
   .card{background:var(--paper-white); border:2px solid var(--border); border-radius:var(--wobbly-sm);
     overflow:hidden; margin-bottom:16px; box-shadow:4px 4px 0 var(--border); position:relative;}
   .plan{width:100%; border-collapse:collapse;}
   .plan tr{border-bottom:1.5px dashed var(--muted);} .plan tr:last-child{border-bottom:none;}
   .plan td{padding:10px 14px; vertical-align:top; font-size:14.5px;}
-  .plan td.time{width:58px; white-space:nowrap; font-weight:700; color:var(--accent2); font-size:14px;}
+  .plan td.time{width:60px; white-space:nowrap; font-weight:700; color:var(--accent2); font-size:14px;}
   .plan td.desc b{color:var(--fg);}
-  .plan td.note{color:var(--fg); opacity:.65; font-size:12.5px; width:135px;}
+  .plan td.note{color:var(--fg); opacity:.65; font-size:12.5px; width:150px;}
+  .pin{color:var(--accent2); text-decoration:none; border-bottom:1.5px dashed var(--accent2); font-weight:700;}
+  .pin:hover{color:var(--accent); border-color:var(--accent);}
   .tip,.warn{margin-bottom:14px; font-size:14px; padding:12px 16px; border-radius:var(--wobbly-sm); border:2px solid var(--border);}
   .tip{background:var(--postit); box-shadow:3px 3px 0 var(--border); transform:rotate(-.7deg);}
   .tip b{color:var(--fg);}
   .warn{background:#ffe3e3; box-shadow:3px 3px 0 var(--border); transform:rotate(.7deg); border-color:var(--accent);}
   .warn b{color:var(--accent);}
-  .navbtns{display:flex; justify-content:space-between; margin-top:20px;}
-  .navbtns button{font-family:'Mali',cursive; font-size:14px; background:var(--paper-white); border:2px solid var(--border);
-    color:var(--fg); padding:8px 18px; border-radius:var(--wobbly-sm); cursor:pointer; box-shadow:3px 3px 0 var(--border);
-    transition:transform .1s, box-shadow .1s;}
-  .navbtns button:hover:not(:disabled){background:var(--accent); color:#fff; box-shadow:1px 1px 0 var(--border); transform:translate(2px,2px);}
-  .navbtns button:active:not(:disabled){box-shadow:none; transform:translate(4px,4px);}
-  .navbtns button:disabled{opacity:.3; cursor:default;}
 
   /* ===== REF SECTIONS ===== */
   .ref{margin-bottom:48px;}
-  .ref-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  .ref-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;}
   .ref-card{background:var(--paper-white); border:2px solid var(--border); padding:18px 20px; position:relative;
     box-shadow:4px 4px 0 var(--border);}
-  .ref-card:nth-child(1){border-radius:var(--wobbly); transform:rotate(-1deg);}
-  .ref-card:nth-child(2){border-radius:var(--wobbly-2); transform:rotate(1deg);}
-  .ref-card:nth-child(3){border-radius:var(--wobbly-md); transform:rotate(-1deg);}
-  .ref-card:nth-child(4){border-radius:var(--wobbly); transform:rotate(1deg);}
+  .ref-card:nth-child(4n+1){border-radius:var(--wobbly); transform:rotate(-1deg);}
+  .ref-card:nth-child(4n+2){border-radius:var(--wobbly-2); transform:rotate(1deg);}
+  .ref-card:nth-child(4n+3){border-radius:var(--wobbly-md); transform:rotate(-1deg);}
+  .ref-card:nth-child(4n+4){border-radius:var(--wobbly); transform:rotate(1deg);}
   .ref-card:hover{transform:rotate(0deg); transition:transform .15s;}
   .ref-card .tack{position:absolute; top:-9px; left:50%; transform:translateX(-50%); width:16px; height:16px;
     border-radius:50%; background:radial-gradient(circle at 35% 35%, #ff8080, var(--accent)); border:1.5px solid var(--border);}
@@ -179,10 +150,6 @@
   .checklist li:last-child{border-bottom:none;}
   .checklist .box{flex:0 0 auto; width:18px; height:18px; margin-top:2px; border:2.5px solid var(--accent2);
     border-radius:5px 2px 5px 2px; transform:rotate(-3deg);}
-  .qa-item{position:relative; padding:14px 20px; background:var(--paper-white); border:2px solid var(--border);
-    border-radius:var(--wobbly-sm); margin-bottom:12px; box-shadow:3px 3px 0 var(--border); font-size:14.5px;}
-  .qa-item:nth-child(odd){transform:rotate(-.6deg);} .qa-item:nth-child(even){transform:rotate(.6deg);}
-  .qa-item b{color:var(--accent2);}
 
   .tape{position:absolute; top:-12px; left:50%; transform:translateX(-50%) rotate(-3deg); width:70px; height:22px;
     background:rgba(230,220,190,.75); border:1px solid rgba(150,140,110,.4); box-shadow:0 1px 2px rgba(0,0,0,.08);}
@@ -191,13 +158,10 @@
   footer .hand-heavy{display:block; font-size:20px; color:var(--accent2); margin-bottom:6px;}
 
   @media (max-width:860px){
-    .layout{grid-template-columns:1fr; height:auto;}
-    .left{border-right:none; border-bottom:3px dashed var(--border);}
-    .daylist{max-height:none; overflow-x:auto; flex-direction:row;}
-    .daybtn{flex:0 0 auto;} .daybtn .lbl b, .daybtn .lbl span{max-width:100px;}
-    .routewrap{max-height:44vh;}
-    .right{max-height:none; padding:18px 16px 24px;}
-    .ref-grid{grid-template-columns:1fr;}
+    main{padding:36px 16px 20px;}
+    .day-grid{grid-template-columns:1fr;}
+    .gallery{position:static; flex-direction:row; overflow-x:auto; padding-bottom:4px;}
+    .gcard{flex:0 0 auto; min-width:190px;}
     .plan td.note{display:none;}
   }
 </style>
@@ -212,18 +176,10 @@
   <span class="hero-eyebrow">a family road trip journal</span>
   <h1>แผนเที่ยวญี่ปุ่น<span class="bang">!</span></h1>
   <p class="dates">7 – 19 ตุลาคม 2026 · 13 วัน 12 คืน</p>
-  <div class="hero-stats">
-    <div class="stat"><span class="num">11</span><span class="lbl">คนเดินทาง</span></div>
-    <div class="stat"><span class="num">7+1</span><span class="lbl">ผู้ใหญ่ (ท้อง 1)</span></div>
-    <div class="stat"><span class="num">4</span><span class="lbl">เด็กเล็ก</span></div>
-    <div class="stat"><span class="num">2</span><span class="lbl">Alphard เช่า</span></div>
-    <div class="stat"><span class="num">6</span><span class="lbl">ที่พัก</span></div>
-  </div>
 </header>
 
 <nav class="topnav">
   <div class="topnav-inner">
-    <a href="#overview">ภาพรวม</a>
     <a href="#itinerary">แผนเส้นทางรายวัน</a>
     <a href="#logistics">ข้อมูลสำคัญ</a>
     <a href="#checklist">Checklist</a>
@@ -232,56 +188,11 @@
 
 <main>
 
-  <section>
-    <p class="section-title wavy-u">⚠ สิ่งที่ต้องรู้ก่อนอ่านแผน</p>
-    <div class="callout">
-      <ol>
-        <li><b>10–12 ต.ค. เป็นวันหยุดยาว 3 วัน</b> ของญี่ปุ่น ตรงกับช่วงขับ Nikko → Kusatsu → Kawaguchiko พอดี — ทุกวันช่วงนี้ออกเดินทางเช้ากว่าปกติ 1 ชม. และจองร้านอาหารล่วงหน้า</li>
-        <li><b>โตเกียวมี 3 วันเต็ม (16, 17, 18)</b>: ศุกร์ = สวนสัตว์อุเอโนะ + พิพิธภัณฑ์วิทยาศาสตร์ธรรมชาติ · เสาร์ = Maxell Aqua Park Shinagawa (ดูโชว์เที่ยงแล้วอิสระ) · อาทิตย์ = วันช็อปปิ้งเต็มวัน โซนอาซากุสะ–สกายทรี</li>
-        <li><b>กระเป๋าวันสุดท้าย</b> ขนไปเองกับรถตู้ 2 คัน ไม่ผ่าน Yamato แล้ว</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="overview" class="overview">
-    <p class="section-title wavy-u">ภาพรวมทริป</p>
-    <p class="section-lede">เส้นทาง Ibaraki → Nikko → Kusatsu → Kawaguchiko → Kamakura → Tokyo</p>
-    <div class="ov-card">
-      <div class="ov-row"><div class="ov-date">7 ต.ค. พ.</div><div class="ov-body"><b>Narita → Ibaraki</b> <span>— ถึงสนามบิน รับรถ ซื้อของเข้าบ้าน</span></div></div>
-      <div class="ov-row"><div class="ov-date">8 ต.ค. พฤ.</div><div class="ov-body"><b>Ibaraki</b> <span>— Hitachi Seaside Park + ตลาดปลา Nakaminato + Aqua World</span></div></div>
-      <div class="ov-row"><div class="ov-date">9 ต.ค. ศ.</div><div class="ov-body"><b>Nikko</b> <span>— ขับ 2 ชม. + Tobu World Square</span></div></div>
-      <div class="ov-row"><div class="ov-date">10 ต.ค. ส.</div><div class="ov-body"><b>Nikko → Kusatsu</b> <span>— ขับ 3 ชม. ผ่าน Numata</span></div></div>
-      <div class="ov-row"><div class="ov-date">11 ต.ค. อา.</div><div class="ov-body"><b>Kusatsu</b> <span>— Yubatake, โชว์ Yumomi, Sainokawara</span></div></div>
-      <div class="ov-row"><div class="ov-date">12 ต.ค. จ.</div><div class="ov-body"><b>Kusatsu → Kawaguchiko</b> <span>— Onioshidashi + Karuizawa + รับกระเป๋า</span></div></div>
-      <div class="ov-row"><div class="ov-date">13 ต.ค. อ.</div><div class="ov-body"><b>Kawaguchiko</b> <span>— Oishi Park + กระเช้า + หมู่บ้านโบราณ</span></div></div>
-      <div class="ov-row"><div class="ov-date">14 ต.ค. พ.</div><div class="ov-body"><b>→ Gotemba → Kamakura</b> <span>— Gotemba Premium Outlets</span></div></div>
-      <div class="ov-row"><div class="ov-date">15 ต.ค. พฤ.</div><div class="ov-body"><b>Kamakura → Tokyo</b> <span>— หลวงพ่อโตคามาคุระ + Komachi-dori</span></div></div>
-      <div class="ov-row"><div class="ov-date">16 ต.ค. ศ.</div><div class="ov-body"><b>Tokyo</b> <span>— สวนสัตว์อุเอโนะ + พิพิธภัณฑ์วิทยาศาสตร์ธรรมชาติ</span></div></div>
-      <div class="ov-row"><div class="ov-date">17 ต.ค. ส.</div><div class="ov-body"><b>Tokyo</b> <span>— Maxell Aqua Park Shinagawa (วันเบาๆ)</span></div></div>
-      <div class="ov-row"><div class="ov-date">18 ต.ค. อา.</div><div class="ov-body"><b>Tokyo</b> <span>— วันช็อปปิ้งเต็มวัน โซนอาซากุสะ–สกายทรี</span></div></div>
-      <div class="ov-row"><div class="ov-date">19 ต.ค. จ.</div><div class="ov-body"><b>Tokyo → Narita</b> <span>— เช็คเอาต์ 11:00, ถึงสนามบิน 15:00 ✈</span></div></div>
-    </div>
-  </section>
-
   <section id="itinerary">
     <p class="section-title wavy-u">แผนเส้นทางรายวัน</p>
-    <p class="section-lede">เลือกวันด้านซ้าย — แผนผังเส้นทางกับรายละเอียดจะอัปเดตให้ทันที</p>
-    <div class="itinerary-wrap">
-      <div class="layout">
-        <aside class="left">
-          <div class="brand"><b>13 วันเดินทาง</b><p>เลือกวันเพื่อดูเส้นทาง</p></div>
-          <nav class="daylist" id="daylist"></nav>
-          <div class="routewrap">
-            <svg id="routeSvg" viewBox="0 0 320 340" preserveAspectRatio="xMidYMid meet"></svg>
-            <div class="legend">
-              <span><i style="background:var(--accent2)"></i>จุดแวะ</span>
-              <span><i style="background:var(--accent)"></i>เริ่ม/สิ้นสุด</span>
-            </div>
-          </div>
-        </aside>
-        <main class="right" id="rightPane"></main>
-      </div>
-    </div>
+    <p class="section-lede">เลื่อนดูได้เลยทีละวัน — แตะตัวเลขเพื่อกระโดดไปวันนั้น · แตะชื่อสถานที่เพื่อเปิด Google Maps</p>
+    <div class="dayjump" id="dayjump"></div>
+    <div id="dayContainer"></div>
   </section>
 
   <section id="logistics" class="ref">
@@ -344,10 +255,10 @@
     <div class="card" style="padding:8px 22px; margin-top:16px; border-radius:var(--wobbly-md); transform:rotate(.4deg);">
       <ul class="checklist">
         <li><span class="box"></span>บัตร Maxell Aqua Park Shinagawa (e-ticket) — 17 ต.ค.</li>
-        <li><span class="box"></span>ตั๋วกระเช้า Kachi Kachi Yama Ropeway — 13 ต.ค. (ซื้อหน้างานได้)</li>
-        <li><span class="box"></span>บัตรเข้า Tobu World Square — 9 ต.ค. (ซื้อหน้างานได้)</li>
-        <li><span class="box"></span>จองร้านอาหารกลุ่ม 11 คน: Kyuraku (8 ต.ค.), ร้านเย็นที่คุซัทสึ (10–11 ต.ค.)</li>
+        <li><span class="box"></span>บัตรเข้า Tobu World Square — ตัดออกจากแผนแล้ว (ไม่ต้องจอง)</li>
+        <li><span class="box"></span>จองร้านอาหารกลุ่ม 11 คน: Ishizaki (7 ต.ค.), Tonkame (8 ต.ค.), โซบะ/สเต็กที่นิกโก้ (9 ต.ค.), <b>Sukiyaki Soshiji Kusatsu — จองแล้ว 10 ต.ค. 16:30</b>, Uoshige (12 ต.ค.)</li>
         <li><span class="box"></span>บัตร Tokyo Skytree (ถ้าจะขึ้น)</li>
+        <li><span class="box"></span>เช็คเวลาเปิด Fuji Safari Park / Makaino Farm ก่อนไปวันที่ 13 (เลือกอย่างใดอย่างหนึ่ง)</li>
       </ul>
     </div>
   </section>
@@ -361,167 +272,167 @@
 </footer>
 
 <script>
+// ---- Google Maps helper: pass either "lat,lng" or a free-text place name/query ----
+function gmapUrl(q){ return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q); }
+function P(label, q){ return '<a class="pin" href="'+gmapUrl(q)+'" target="_blank" rel="noopener">'+label+'</a>'; }
+
 const days = [
-{title:"Narita → Ibaraki", date:"พุธ 7 ต.ค.", sub:"ถึงญี่ปุ่น รับรถเช่า มุ่งหน้าที่พักแรก",
- stops:[
-  {name:"Narita Airport T1", lat:35.7642236, lng:140.3860877, time:"15:20", note:"ลงเครื่อง ผ่าน ตม."},
-  {name:"Toyota Rent-A-Car", lat:35.7841199, lng:140.3834805, time:"16:40", note:"รับรถ 2 คัน"},
-  {name:"Kasumi Hitachinaka", lat:36.3972268, lng:140.5421994, time:"19:00", note:"ซื้อของกินสำเร็จ"},
-  {name:"MOKURe", lat:36.1453529, lng:140.3401946, time:"20:00", note:"เช็คอิน"}],
+{title:"Narita → Ibaraki", date:"พุธ 7 ต.ค.", sub:"ถึงญี่ปุ่น รับรถเช่า มื้อเย็นซีฟู้ดสด แล้วช้อปวัตถุดิบเผื่อ 2 วัน",
+ gallery:[
+  {icon:"✈️", name:"Narita Airport T1", note:"จุดลงเครื่อง", q:"35.7642236,140.3860877"},
+  {icon:"🚗", name:"Toyota Rent-A-Car", note:"รับรถ 2 คัน", q:"35.7841199,140.3834805"},
+  {icon:"🍤", name:"Ishizaki 海鮮食事処いしざき", note:"มื้อเย็นซีฟู้ด", q:"海鮮食事処いしざき 茨城"},
+  {icon:"🛒", name:"Kasumi Food Square 小川店", note:"ซื้อของเช้า 2 วัน", q:"フードスクエアカスミ 小川店"},
+  {icon:"🏠", name:"MOKURe", note:"บ้านพักคืนแรก", q:"36.1453529,140.3401946"}],
  table:[["15:20","เครื่องลง NRT Terminal 1",""],["15:30","ผ่าน ตม. + รับกระเป๋า","11 คนใช้เวลานาน เผื่อไว้"],
   ["16:00","ส่งกระเป๋าครึ่งหลังที่เคาน์เตอร์ <b>Yamato</b> ไป Funatsu Center, Kawaguchiko","ระบุวันรับ 12 ต.ค."],
-  ["16:20","ขึ้นรถบัสฟรีไปสำนักงาน Toyota Rent-A-Car","ป้ายรถหน้าอาคาร"],
+  ["16:20","ขึ้นรถบัสฟรีไปสำนักงาน "+P("Toyota Rent-A-Car","35.7841199,140.3834805"),"ป้ายรถหน้าอาคาร"],
   ["16:40","รับรถ 2 คัน — ตรวจคาร์ซีท 4 ตัว, ตั้ง ETC, Google Maps","เผื่อเวลา 40 นาที"],
   ["17:20","ออกเดินทาง ~1 ชม. 20 นาที","มืดแล้ว คนขับเพิ่งบิน 6 ชม."],
-  ["19:00","แวะ <b>Kasumi</b> ซื้อของกินสำเร็จ/เบนโตะ ไม่ต้องทำอาหารเอง","ซื้อของเช้าพรุ่งนี้ด้วย"],
-  ["20:00","เช็คอิน <b>MOKURe</b> กินเบนโตะที่ซื้อมาเป็นมื้อเย็น",""]],
+  ["18:40","มื้อเย็นที่ <b>"+P("Ishizaki 海鮮食事処いしざき","海鮮食事処いしざき 茨城")+"</b> ซีฟู้ดสดจากอิบารากิ","ควรโทรจองโต๊ะ 11 คนล่วงหน้า"],
+  ["20:00","แวะ <b>"+P("Kasumi フードスクエアカスミ 小川店","フードスクエアカスミ 小川店")+"</b> ซื้อวัตถุดิบทำอาหารเช้า 2 วัน (8 และ 9 ต.ค.)","ซื้อของใช้จำเป็นอื่นเผื่อไว้ด้วย"],
+  ["20:45","เช็คอิน <b>"+P("MOKURe","36.1453529,140.3401946")+"</b>",""]],
  tips:[{type:"tip",text:"คนขับ 2 คนควรเป็นคนที่ได้นอนบนเครื่อง วันแรกอย่าฝืน ถ้าเหนื่อยให้แวะพัก SA/PA"}]},
 
-{title:"Hitachi Seaside Park + Aqua World", date:"พฤหัสบดี 8 ต.ค.", sub:"ทุ่งโคเคีย ตลาดปลา และพิพิธภัณฑ์สัตว์น้ำ",
- stops:[
-  {name:"MOKURe", lat:36.1453529, lng:140.3401946, time:"08:30", note:"ออกเดินทาง"},
-  {name:"Hitachi Seaside Park", lat:36.405864, lng:140.5964868, time:"09:30", note:""},
-  {name:"Nakaminato Fish Market", lat:36.3397734, lng:140.5945563, time:"12:00", note:""},
-  {name:"Aqua World Oarai", lat:36.3335755, lng:140.5940179, time:"14:00", note:""},
-  {name:"MOKURe", lat:36.1453529, lng:140.3401946, time:"17:30", note:"กลับที่พัก"}],
+{title:"Hitachi Seaside Park + Aqua World", date:"พฤหัสบดี 8 ต.ค.", sub:"ทุ่งโคเคีย ตลาดปลา พิพิธภัณฑ์สัตว์น้ำ ปิดท้ายมื้อเย็นที่ Tonkame",
+ gallery:[
+  {icon:"🌸", name:"Hitachi Seaside Park", note:"ทุ่งโคเคีย/คอสมอส", q:"36.405864,140.5964868"},
+  {icon:"🐟", name:"Nakaminato Fish Market", note:"ซาชิมิ/ไคเซ็นด้ง", q:"36.3397734,140.5945563"},
+  {icon:"🐬", name:"Aqua World Oarai", note:"โชว์โลมา", q:"36.3335755,140.5940179"},
+  {icon:"🍱", name:"Tonkame とんかめ", note:"มื้อเย็น", q:"とんかめ 茨城"}],
  table:[["08:30","ออกเดินทาง (~50 นาที)",""],
-  ["09:30","<b>Hitachi Seaside Park</b> — เดินเนิน Miharashi ดูโคเคีย+คอสมอส นั่ง Seaside Train","รถรางในสวน ไม่ต้องเดินไกล"],
-  ["12:00","ขับไป <b>Nakaminato Fish Market</b> (20 นาที)",""],
-  ["12:30","ข้าวเที่ยงร้าน <b>Kyuraku</b> — ซาชิมิ/ไคเซ็นด้ง","ควรโทรจองโต๊ะล่วงหน้า"],
-  ["14:00","ขับ 5 นาทีไป <b>Aqua World Oarai</b> — โชว์โลมา/สิงโตทะเล","เช็ครอบโชว์ที่ทางเข้า"],
-  ["16:30","ขับกลับบ้าน (~1 ชม.) แวะซูเปอร์ถ้าของหมด",""],
-  ["18:00","ทำกับข้าวกินที่บ้าน / แช่ออนเซ็นในบ้าน",""]],
+  ["09:30","<b>"+P("Hitachi Seaside Park","36.405864,140.5964868")+"</b> — เดินเนิน Miharashi ดูโคเคีย+คอสมอส นั่ง Seaside Train","รถรางในสวน ไม่ต้องเดินไกล"],
+  ["12:00","ขับไป <b>"+P("Nakaminato Fish Market","36.3397734,140.5945563")+"</b> (20 นาที)",""],
+  ["12:30","ข้าวเที่ยงร้าน <b>"+P("Kyuraku","久楽 那珂湊 茨城")+"</b> — ซาชิมิ/ไคเซ็นด้ง","ควรโทรจองโต๊ะล่วงหน้า"],
+  ["14:00","ขับ 5 นาทีไป <b>"+P("Aqua World Oarai","36.3335755,140.5940179")+"</b> — โชว์โลมา/สิงโตทะเล","เช็ครอบโชว์ที่ทางเข้า"],
+  ["17:00","ขับไปมื้อเย็นที่ <b>"+P("Tonkame とんかめ","とんかめ 茨城")+"</b>","ควรโทรจองโต๊ะ 11 คน"],
+  ["19:00","กลับที่พัก MOKURe แช่ออนเซ็นในบ้าน",""]],
  tips:[{type:"tip",text:"โคเคีย 8 ต.ค.: ต้นเดือนยังเป็นสีเขียวไล่แดง สวยคนละแบบและคนน้อยกว่ามาก เช็คสถานะสีก่อนไป 1 วัน"}]},
 
-{title:"Ibaraki → Nikko", date:"ศุกร์ 9 ต.ค.", sub:"Tobu World Square — สนุกกับเด็กมากกว่าเดินศาลเจ้า",
- stops:[
-  {name:"MOKURe", lat:36.1453529, lng:140.3401946, time:"10:00", note:"เช็คเอาต์"},
-  {name:"Tobu World Square", lat:36.813, lng:139.679, time:"13:30", note:""},
-  {name:"บ้านพัก Nikko", lat:36.750919, lng:139.612885, time:"16:30", note:"เช็คอิน"}],
- table:[["09:00","เก็บของ ทำความสะอาดบ้านตามกฎ",""],["10:00","เช็คเอาต์ ออกเดินทาง (~2 ชม.)",""],
-  ["12:00","ถึงนิกโก้ — ข้าวเที่ยง <b>ยูบะ</b> ของขึ้นชื่อ แถว Nikko-kaido",""],
-  ["13:00","ขับต่อไปฝั่ง Kinugawa","~20–30 นาที"],
-  ["13:30","<b>Tobu World Square</b> — โมเดลสถาปัตยกรรมโลก 1:25 กว่า 100 จุด","เดินราบ เหมาะรถเข็น+คนท้อง"],
-  ["16:00","ออกจากสวน ขับกลับเข้าเมืองนิกโก้",""],
-  ["16:30","เช็คอินบ้าน Nikko",""]],
- tips:[{type:"tip",text:"เปิด 09:00–17:00 ค่าเข้าผู้ใหญ่ 2,800 เยน เด็ก 4 ขวบ–ประถม 1,400 เยน ที่จอด 800 เยน/คัน ใช้เวลา ~2–2.5 ชม."},
-  {type:"tip",text:"ทางเลือกอื่น: EDO WONDERLAND (หมู่บ้านเอโดะ ใส่กิโมโน/นินจา) อยู่ใกล้กัน ใช้เวลามากกว่า เหมาะเด็กโตกว่าเล็กน้อย"}]},
+{title:"Ibaraki → Nikko (วันสบายๆ)", date:"ศุกร์ 9 ต.ค.", sub:"ตรงไปนิกโก้เลย เดินถนนคนเดิน แวะศาลเจ้าโทโชกุได้ถ้าอยากไป",
+ gallery:[
+  {icon:"🌉", name:"Shinkyo Bridge / ถนนคนเดิน", note:"เดินเล่นสบายๆ", q:"神橋 日光"},
+  {icon:"⛩️", name:"Nikko Toshogu", note:"ตัวเลือกใครสนใจ", q:"日光東照宮"},
+  {icon:"🍜", name:"蕎麦切り照月", note:"ตัวเลือกมื้อเย็น", q:"蕎麦切り照月 日光"},
+  {icon:"🥩", name:"レストランえんや", note:"ตัวเลือกมื้อเย็น", q:"日光 レストランえんや"}],
+ table:[["09:00","เก็บของ เช็คเอาต์",""],
+  ["09:00","ขับตรงไปนิกโก้ (~2 ชม.) — <b>ตัด Tobu World Square / Edo Wonderland ออกแล้ว</b>",""],
+  ["11:00","เช็คอินบ้านพัก Nikko ถ้าเช็คอินได้เร็ว ไม่งั้นฝากกระเป๋าไว้ก่อน",""],
+  ["11:30","เดินเล่น Nikko-kaido ถนนคนเดินในเมือง ชม <b>"+P("Shinkyo Bridge สะพานแดง","神橋 日光")+"</b>","เดินสบายๆ ไม่ต้องรีบ"],
+  ["13:00","(ตัวเลือก) เดินขึ้น <b>"+P("ศาลเจ้า Nikko Toshogu","日光東照宮")+"</b> ใครสนใจประวัติศาสตร์/สถาปัตยกรรม","เดินเยอะ+บันไดเยอะ ไม่บังคับทั้งกรุ๊ป"],
+  ["15:00","พักที่บ้าน / เดินช้อปของฝากในเมืองต่อ",""],
+  ["18:00","มื้อเย็น เลือกระหว่างโซบะที่ <b>"+P("蕎麦切り照月","蕎麦切り照月 日光")+"</b> หรือสเต็กที่ <b>"+P("レストランえんや","日光 レストランえんや")+"</b>","ควรโทรจองโต๊ะ 11 คนล่วงหน้า"]],
+ tips:[{type:"tip",text:"ตัดสวนสนุกออกให้เป็นวันเบาๆ พักจากการขับรถ เดินเล่นถนนคนเดินกับคาเฟ่/ร้านขายของพื้นเมืองแทน"},
+  {type:"tip",text:"ถ้าไปศาลเจ้าโทโชกุ ค่าเข้าผู้ใหญ่ ~1,300 เยน เปิด 08:00–17:00 (พ.ย.–มี.ค. ปิด 16:00)"}]},
 
-{title:"Nikko → Kusatsu Onsen", date:"เสาร์ 10 ต.ค. · เริ่มวันหยุดยาว", sub:"ขับข้ามภูเขาสู่เมืองออนเซ็น",
- stops:[
-  {name:"บ้านพัก Nikko", lat:36.750919, lng:139.612885, time:"09:00", note:"เช็คเอาต์เร็ว"},
-  {name:"Michi-no-Eki Numata", lat:36.6622348, lng:139.1203743, time:"11:30", note:""},
-  {name:"Rakuten STAY VILLA Kusatsu", lat:36.6298351, lng:138.594638, time:"15:00", note:"เช็คอิน"}],
- table:[["08:00","อาหารเช้า เก็บของ",""],["09:00","<b>เช็คเอาต์เร็วขึ้น 1 ชม.</b> เสาร์แรกวันหยุดยาว รถติดแน่",""],
-  ["09:00","ขับเส้น Nikko → Numata → Kusatsu (~3 ชม.)",""],
-  ["11:30","ข้าวเที่ยงที่ <b>道の駅 Numata</b>","ห้องน้ำสะอาด ที่นั่งเยอะ"],
-  ["14:00","ถึงเมือง Kusatsu จอดรถตามที่พักแจ้ง","ถนนในเมืองแคบ ระวัง"],
-  ["15:00","เช็คอิน <b>Rakuten STAY VILLA</b>",""],
-  ["16:30","เดินเล่น <b>Yubatake</b> ตอนเย็น ไฟสวยมาก",""]],
- tips:[{type:"tip",text:"ระหว่างทางถ้าเวลาเหลือ: Fukiware Falls แวะได้ 40 นาที ระหว่าง Numata → Kusatsu"}]},
+{title:"Nikko → Kusatsu Onsen", date:"เสาร์ 10 ต.ค. · เริ่มวันหยุดยาว", sub:"แวะชีสการ์เด้นนิกโก้และ Shirasawa เย็นนี้กินซูกิยากิที่จองไว้แล้ว",
+ gallery:[
+  {icon:"🧀", name:"Cheese Garden THE NIKKO", note:"แวะซื้อของฝาก", q:"チーズガーデン THE NIKKO"},
+  {icon:"🛣️", name:"Michi-no-Eki Shirasawa", note:"จุดพักรถ", q:"道の駅 白沢 群馬"},
+  {icon:"🍲", name:"Wagyu Sukiyaki Soshiji Kusatsu", note:"จองแล้ว 16:30 น.", q:"Wagyu Sukiyaki Soshiji Kusatsu 草津"},
+  {icon:"♨️", name:"Yubatake ยามเย็น", note:"เดินเล่น/ช้อป", q:"36.6229647,138.5967231"}],
+ table:[["08:30","อาหารเช้า เก็บของ",""],
+  ["09:00","<b>ออกจากบ้าน Nikko ตามเวลานี้</b> ช่วงวันหยุดยาวรถอาจติด",""],
+  ["09:40","แวะ <b>"+P("Cheese Garden THE NIKKO","チーズガーデン THE NIKKO")+"</b> ซื้อของฝาก/ทานชีสเค้กระหว่างทาง","ร้านมีสวน/ระเบียงวิวภูเขา"],
+  ["12:00","แวะพัก <b>"+P("Michi-no-Eki Shirasawa","道の駅 白沢 群馬")+"</b> ข้าวเที่ยง + ห้องน้ำ","จุดพักรถระหว่างทางไปคุซัทสึ"],
+  ["14:30","ถึงเมือง Kusatsu เช็คอิน Rakuten STAY VILLA","ถนนในเมืองแคบ ระวัง"],
+  ["16:30","มื้อเย็นที่ <b>"+P("Wagyu Sukiyaki Soshiji Kusatsu","Wagyu Sukiyaki Soshiji Kusatsu 草津")+"</b> — จองไว้แล้ว 11 คน โต๊ะ 3–6 คน (Table seating)","มาให้ตรงเวลา ยกเลิกล่วงหน้า 24 ชม.ถ้าไปไม่ได้"],
+  ["18:00","เดินเล่นรอบ <b>"+P("Yubatake","36.6229647,138.5967231")+"</b> ยามเย็น ไฟสวยมาก หรือช้อปที่ <b>"+P("Super Mokube","Super Mokube 草津温泉")+"</b> / <b>"+P("MARUE-DRUG Kusatsu Onsen Store","マルエドラッグ 草津温泉店")+"</b>",""]],
+ tips:[{type:"tip",text:"ตัดแวะ Fukiware Falls ออก เพราะเปลี่ยนเส้นทางผ่าน Shirasawa แทนแล้ว"},
+  {type:"warn",text:"ร้าน Sukiyaki จองไว้แล้ว: เสาร์ 16:30 น. โต๊ะ 3–6 คน (Table seating) ที่ Kusatsu, Gunma 377-1711 — ถ้าไปไม่ได้ต้องยกเลิกล่วงหน้า 24 ชม."}]},
 
-{title:"Kusatsu Onsen เต็มวัน", date:"อาทิตย์ 11 ต.ค.", sub:"วันพักผ่อน ไม่ต้องขับรถ",
- stops:[
-  {name:"Rakuten STAY VILLA", lat:36.6298351, lng:138.594638, time:"10:00", note:"เริ่มเดิน"},
-  {name:"Sainokawara Park", lat:36.6241602, lng:138.5896634, time:"10:00", note:""},
-  {name:"Netsunoyu", lat:36.6227418, lng:138.5962956, time:"14:00", note:"โชว์ Yumomi"},
-  {name:"Yubatake", lat:36.6229647, lng:138.5967231, time:"15:30", note:""},
-  {name:"Rakuten STAY VILLA", lat:36.6298351, lng:138.594638, time:"17:00", note:"กลับที่พัก"}],
- table:[["เช้า","อาหารเช้าที่บ้าน ไม่ต้องรีบ วันนี้เดินได้ทั้งหมด",""],
-  ["10:00","เดินไป <b>Sainokawara Park</b>",""],
-  ["11:00","<b>Sainokawara Rotenburo</b> ออนเซ็นกลางแจ้งใหญ่","คนท้องแช่แค่บ่อเท้า"],
+{title:"Kusatsu Onsen เต็มวัน", date:"อาทิตย์ 11 ต.ค.", sub:"เริ่มเช้าที่ YAMAIRO เดินเล่น Sainokawara ช้อปรอบเมือง",
+ gallery:[
+  {icon:"🍳", name:"YAMAIRO 朝ごはん", note:"อาหารเช้า", q:"朝ごはんYAMAIRO 草津"},
+  {icon:"🌲", name:"Sainokawara Park", note:"เดินเล่น/ออนเซ็นกลางแจ้ง", q:"36.6241602,138.5896634"},
+  {icon:"💃", name:"Netsunoyu", note:"โชว์ Yumomi", q:"36.6227418,138.5962956"},
+  {icon:"♨️", name:"Yubatake", note:"ช้อปของฝาก", q:"36.6229647,138.5967231"}],
+ table:[["09:00","อาหารเช้าที่ <b>"+P("Breakfast & Afternoon Meals YAMAIRO","朝ごはんYAMAIRO 草津")+"</b>","ไม่ต้องรีบ เมนูเบาๆสไตล์คาเฟ่"],
+  ["10:00","เดินไป <b>"+P("Sainokawara Park","36.6241602,138.5896634")+"</b>",""],
+  ["11:00","Sainokawara Rotenburo ออนเซ็นกลางแจ้งใหญ่","คนท้องแช่แค่บ่อเท้า"],
   ["12:30","ข้าวเที่ยงในเมือง (โซบะ/คาเรปัง/ร้านเนื้อ)",""],
-  ["14:00","<b>โชว์ Yumomi</b> ที่ Netsu-no-Yu","เช็ครอบวันนั้นหน้าอาคาร"],
-  ["15:30","ช็อปของฝากถนน Yubatake / ซอฟต์ครีม",""],
-  ["17:00","กลับที่พัก แช่ออนเซ็นในวิลล่า",""],
-  ["เย็น","BBQ / หม้อไฟที่บ้าน หรือกินร้านในเมือง","อาทิตย์วันหยุดยาว ควรจอง"]],
+  ["14:00","โชว์ Yumomi ที่ <b>"+P("Netsu-no-Yu","36.6227418,138.5962956")+"</b>","เช็ครอบวันนั้นหน้าอาคาร"],
+  ["15:30","ช้อปของฝากถนน <b>"+P("Yubatake","36.6229647,138.5967231")+"</b> / ซอฟต์ครีม",""],
+  ["18:00","มื้อเย็นในเมือง — <b>ซื้อของกินเผื่อทำอาหารเช้าพรุ่งนี้ด้วย</b> (ออกเช้าวันที่ 12)","ร้านอาหาร+ซุปเปอร์ในเมือง Kusatsu"]],
  tips:[{type:"warn",text:"คนท้อง: งดแช่บ่อกำมะถันร้อนจัด (45–50°C กรดแรง) แนะนำแช่แค่บ่อแช่เท้าฟรี (足湯)"}]},
 
-{title:"Kusatsu → Lake Kawaguchiko", date:"จันทร์ 12 ต.ค. · รถติดที่สุด", sub:"วันสุดท้ายของวันหยุดยาว ขากลับติดหนัก",
- stops:[
-  {name:"Rakuten STAY VILLA", lat:36.6298351, lng:138.594638, time:"09:00", note:"เช็คเอาต์เร็ว"},
-  {name:"Onioshidashi Park", lat:36.4448257, lng:138.5370699, time:"09:40", note:""},
-  {name:"Karuizawa Prince Plaza", lat:36.341035, lng:138.6330575, time:"11:45", note:""},
-  {name:"Yamato Funatsu Center", lat:35.4881234, lng:138.7630278, time:"16:00", note:""},
-  {name:"บ้านพัก Kawaguchiko", lat:35.479067, lng:138.701224, time:"16:30", note:"เช็คอิน"}],
- table:[["08:30","อาหารเช้า เก็บของ",""],["09:00","<b>เช็คเอาต์เร็ว</b> ขากลับติดหนักช่วงบ่าย–เย็น",""],
-  ["09:40","<b>Onioshidashi Park</b> เดินทุ่งลาวา เห็นภูเขาไฟ Asama","30–40 นาทีจากคุซัทสึ"],
-  ["11:00","ขับต่อไป <b>Karuizawa</b> (~40 นาที)",""],
-  ["11:45","ข้าวเที่ยง + เดิน Karuizawa Prince Shopping Plaza","สนามหญ้าให้เด็กวิ่ง"],
-  ["13:00","ขับยาว Karuizawa → Kawaguchiko (~3 ชม.)",""],
-  ["16:00","<b>รับกระเป๋าที่ Yamato Funatsu Center</b>","ถึงก่อน 18:00"],
-  ["16:30","เช็คอินบ้าน Kawaguchiko",""]],
- tips:[{type:"tip",text:"ถ้าออกสายกว่านี้ ให้ตัด Karuizawa ทิ้ง แล้ววิ่งตรงไปเลย เพราะเสียเวลาบนถนนแน่นอน"}]},
+{title:"Kusatsu → Lake Kawaguchiko", date:"จันทร์ 12 ต.ค. · รถติดที่สุด", sub:"ออกไม่เกิน 8 โมง แวะ Onioshidashi เก็บกระเป๋า/ช้อป Uniqlo มื้อเย็น Uoshige",
+ gallery:[
+  {icon:"🌋", name:"Onioshidashi Volcanic Park", note:"เดินทุ่งลาวา", q:"36.4448257,138.5370699"},
+  {icon:"🧳", name:"Yamato Funatsu Center", note:"รับกระเป๋า", q:"35.4881234,138.7630278"},
+  {icon:"🛍️", name:"Uniqlo Kawaguchiko", note:"ช้อปปิ้ง", q:"ユニクロ 河口湖"},
+  {icon:"🦑", name:"Uoshige 海賊料理魚重", note:"มื้อเย็น", q:"海賊料理魚重 河口湖"}],
+ table:[["07:30","อาหารเช้า เก็บของ",""],
+  ["08:00","<b>เช็คเอาต์ ออกจาก Kusatsu ไม่เกิน 8 โมง</b>","ออกเร็วเพื่อให้ทัน Onioshidashi และเลี่ยงรถติดขากลับ"],
+  ["08:40","<b>"+P("Onioshidashi Park","36.4448257,138.5370699")+"</b> เดินทุ่งลาวา เห็นภูเขาไฟ Asama","ถ้าออกช้ากว่านี้ให้ตัดจุดนี้ทิ้ง"],
+  ["10:30","ขับต่อไป Kawaguchiko (~2.5–3 ชม. ขึ้นกับรถติด)",""],
+  ["14:00","รับกระเป๋าที่ <b>"+P("Yamato Funatsu Center","35.4881234,138.7630278")+"</b>",""],
+  ["14:30","เช็คอินที่พัก / แวะช้อป <b>"+P("Uniqlo Kawaguchiko","ユニクロ 河口湖")+"</b>",""],
+  ["18:00","มื้อเย็นที่ <b>"+P("Uoshige 海賊料理魚重","海賊料理魚重 河口湖")+"</b>","ช่วงบ่าย-เย็นรถน่าจะติดเพราะวันหยุดยาว เผื่อเวลาเดินทางเยอะๆ"]],
+ tips:[{type:"warn",text:"วันหยุดยาววันสุดท้าย ถนนขาเข้า Kawaguchiko ช่วงบ่าย–เย็นติดหนัก เผื่อเวลาเดินทางอย่างน้อย +1 ชม."}]},
 
-{title:"Kawaguchiko เต็มวัน", date:"อังคาร 13 ต.ค.", sub:"วันชิลรอบทะเลสาบ + กระเช้า + หมู่บ้านโบราณ",
- stops:[
-  {name:"บ้านพัก Kawaguchiko", lat:35.479067, lng:138.701224, time:"09:00", note:"ออกเดินทาง"},
-  {name:"Oishi Park", lat:35.522904, lng:138.7457522, time:"09:00", note:""},
-  {name:"Kachi Kachi Yama Ropeway", lat:35.5127, lng:138.7735, time:"10:30", note:""},
-  {name:"Saiko Iyashi-no-Sato Nenba", lat:35.5093, lng:138.6424, time:"13:30", note:""},
-  {name:"บ้านพัก Kawaguchiko", lat:35.479067, lng:138.701224, time:"17:00", note:"กลับที่พัก"}],
- table:[["08:00","เช็ควิวฟูจิจากบ้าน/ทะเลสาบตอนเช้า","ชัดสุดช่วง 6–9 โมงเช้า"],
-  ["09:00","<b>Oishi Park</b> ริมทะเลสาบ — ถ่ายรูปฟูจิ + ทุ่งดอกไม้",""],
-  ["10:30","ขับไป <b>Kachi Kachi Yama Ropeway</b> นั่งกระเช้าวิวฟูจิ","~1 ชม. รวมรอคิว"],
-  ["12:00","ข้าวเที่ยง <b>โฮโตะ</b> ร้าน Hoto Fudo","ของขึ้นชื่อ Yamanashi"],
-  ["13:30","<b>Saiko Iyashi-no-Sato Nenba</b> หมู่บ้านโบราณหลังคามุงฟาง ใส่กิโมโนถ่ายรูปได้",""],
-  ["15:30","เดินเล่น/ช้อปของฝากรอบทะเลสาบ",""],
-  ["17:00","กลับบ้าน ทำกับข้าว / สั่งอาหาร",""]],
- tips:[{type:"tip",text:"Kachi Kachi Yama Ropeway ตั๋วไป-กลับผู้ใหญ่ ~900 เยน เด็ก ~450 เยน · Saiko Iyashi-no-Sato Nenba ค่าเข้าผู้ใหญ่ ~500 เยน เด็กประถมลงฟรี"},
-  {type:"tip",text:"ไม่มีเครื่องเล่นผาดโผน เหมาะกับคนท้องและเด็กเล็กมากกว่าสวนสนุก"}]},
+{title:"Kawaguchiko: หมู่บ้านน้ำใส Oshino Hakkai", date:"อังคาร 13 ต.ค.", sub:"เที่ยว Oshino Hakkai วนรอบทะเลสาบ แล้วแต่เวลาแวะฟาร์มหรือซาฟารี",
+ gallery:[
+  {icon:"💧", name:"Oshino Hakkai (หมู่บ้านน้ำใส)", note:"บ่อน้ำใส 8 บ่อ", q:"忍野八海"},
+  {icon:"🌸", name:"Oishi Park", note:"ถ่ายรูปวิวฟูจิ", q:"35.522904,138.7457522"},
+  {icon:"🐄", name:"Makaino Farm resort", note:"ตัวเลือกถ้ามีเวลา", q:"まかいの牧場"},
+  {icon:"🦁", name:"Fuji Safari Park", note:"ตัวเลือกถ้าอยากดูสัตว์", q:"富士サファリパーク"}],
+ table:[["09:00","เช็ควิวฟูจิจากบ้าน/ทะเลสาบตอนเช้า","ชัดสุดช่วง 6–9 โมงเช้า"],
+  ["09:30","ขับไป <b>"+P("Oshino Hakkai หมู่บ้านน้ำใส","忍野八海")+"</b> ชมบ่อน้ำใส 8 บ่อ","~20 นาทีจาก Kawaguchiko"],
+  ["11:30","ข้าวเที่ยงแถว Oshino Hakkai (โซบะ/ของทอด)",""],
+  ["13:00","วนรอบทะเลสาบ แวะ <b>"+P("Oishi Park","35.522904,138.7457522")+"</b> ถ่ายรูปฟูจิ+ทุ่งดอกไม้",""],
+  ["14:30","(ถ้ามีเวลา) เลือกไป <b>"+P("Makaino Farm resort","まかいの牧場")+"</b> (ฟาร์มสัตว์เล็กๆ) หรือ <b>"+P("Fuji Safari Park","富士サファリパーク")+"</b> (ดูสัตว์ใหญ่)","ทั้งสองที่ไกลขึ้น ~40–50 นาที เผื่อเวลาเดินทาง เลือกอย่างเดียวพอ"],
+  ["17:30","กลับที่พัก",""],
+  ["18:30","มื้อเย็นในเมือง Kawaguchiko / ทำกับข้าวที่บ้าน — <b>ซื้อของไว้กินมื้อเช้าด้วยเพราะพรุ่งนี้ออกแต่เช้า</b>",""]],
+ tips:[{type:"tip",text:"Oshino Hakkai เดินง่าย เหมาะกับเด็กเล็กและคนท้อง ไม่มีบันไดเยอะ"},
+  {type:"tip",text:"Makaino Farm เหมาะเด็กเล็ก (ป้อนนม/รีดนมแพะ) ส่วน Fuji Safari Park เหมาะถ้าอยากดูสัตว์ใหญ่แบบซาฟารี — เวลาไม่พอสองที่ เลือกอย่างใดอย่างหนึ่ง"}]},
 
 {title:"Kawaguchiko → Gotemba → Kamakura", date:"พุธ 14 ต.ค.", sub:"วันช็อปเอาต์เล็ตที่คุ้มที่สุดของทริป",
- stops:[
-  {name:"บ้านพัก Kawaguchiko", lat:35.479067, lng:138.701224, time:"10:00", note:"เช็คเอาต์"},
-  {name:"Gotemba Premium Outlets", lat:35.307271, lng:138.9656467, time:"11:00", note:""},
-  {name:"STELLA STORIA Kamakura", lat:35.3105021, lng:139.5412421, time:"16:00", note:"เช็คอิน"}],
+ gallery:[
+  {icon:"🛍️", name:"Gotemba Premium Outlets", note:"ช้อปปิ้ง+ข้าวเที่ยง", q:"35.307271,138.9656467"},
+  {icon:"🏠", name:"STELLA STORIA Kamakura", note:"เช็คอิน", q:"35.3105021,139.5412421"},
+  {icon:"🏖️", name:"Yuigahama Beach", note:"เดินเล่นตอนเย็น", q:"由比ヶ浜"}],
  table:[["09:00","เก็บของ (ถ้าส่งกระเป๋าล่วงหน้า แวะ Funatsu Center ก่อน)",""],
-  ["10:00","เช็คเอาต์ ขับไป <b>Gotemba Premium Outlets</b> (~1 ชม.)",""],
+  ["10:00","เช็คเอาต์ ขับไป <b>"+P("Gotemba Premium Outlets","35.307271,138.9656467")+"</b> (~1 ชม.)",""],
   ["11:00","ช็อปเอาต์เล็ต + ข้าวเที่ยง","มีโซนเด็กเล่น + รถเข็นยืม"],
   ["14:00","ขับต่อไป Kamakura (~1 ชม. 30 นาที)",""],
-  ["16:00","เช็คอิน <b>STELLA STORIA 由比ヶ浜</b>",""],
-  ["17:00","เดินเล่น หาด Yuigahama ดูพระอาทิตย์ตก","ทะเลใกล้บ้านมาก"]],
+  ["16:00","เช็คอิน <b>"+P("STELLA STORIA 由比ヶ浜","35.3105021,139.5412421")+"</b>",""],
+  ["17:00","เดินเล่นหาด <b>"+P("Yuigahama","由比ヶ浜")+"</b> ดูพระอาทิตย์ตก","ทะเลใกล้บ้านมาก"]],
  tips:[{type:"tip",text:"วันนี้คือวันช็อปแบรนด์เนม/รองเท้า/เสื้อผ้าเด็กที่คุ้มที่สุดของทริป เผื่อกระเป๋าไว้ด้วย"}]},
 
 {title:"Kamakura → Tokyo", date:"พฤหัสบดี 15 ต.ค.", sub:"หลวงพ่อโตและถนนโบราณ ก่อนเข้าเมืองหลวง",
- stops:[
-  {name:"STELLA STORIA", lat:35.3105021, lng:139.5412421, time:"10:00", note:"เช็คเอาต์"},
-  {name:"Kotoku-in", lat:35.3168145, lng:139.5357442, time:"10:20", note:""},
-  {name:"Hase-dera", lat:35.3124791, lng:139.5331106, time:"11:15", note:""},
-  {name:"Komachi-dori", lat:35.3216554, lng:139.5524551, time:"12:15", note:""},
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"16:00", note:"เช็คอิน"}],
+ gallery:[
+  {icon:"🗿", name:"Kotoku-in (หลวงพ่อโต)", note:"ไดบุตสึ", q:"35.3168145,139.5357442"},
+  {icon:"⛩️", name:"Hase-dera", note:"สวนสวย วิวทะเล", q:"35.3124791,139.5331106"},
+  {icon:"🍡", name:"Komachi-dori", note:"เดินช้อป+ข้าวเที่ยง", q:"35.3216554,139.5524551"}],
  table:[["08:30","อาหารเช้า เก็บของ",""],["10:00","เช็คเอาต์ ขับไปจอดที่ Hase",""],
-  ["10:20","<b>Kotoku-in</b> หลวงพ่อโตไดบุตสึ","มาเช้าดีกว่า"],
-  ["11:15","<b>วัด Hase-dera</b> สวนสวย วิวทะเล","ถ้าเด็กงอแงข้ามได้"],
-  ["12:15","ข้าวเที่ยง + เดิน <b>Komachi-dori</b>",""],
+  ["10:20","<b>"+P("Kotoku-in","35.3168145,139.5357442")+"</b> หลวงพ่อโตไดบุตสึ","มาเช้าดีกว่า"],
+  ["11:15","<b>"+P("วัด Hase-dera","35.3124791,139.5331106")+"</b> สวนสวย วิวทะเล","ถ้าเด็กงอแงข้ามได้"],
+  ["12:15","ข้าวเที่ยง + เดิน <b>"+P("Komachi-dori","35.3216554,139.5524551")+"</b>",""],
   ["14:00","ออกเดินทางไปโตเกียว (~1.5–2 ชม.)",""],
   ["16:00","เช็คอินบ้าน Tokyo",""]],
  tips:[{type:"tip",text:"จอดรถที่โตเกียว: ถามเจ้าของบ้านเรื่องที่จอด 2 คัน ถ้าไม่พอ จอง akippa หรือ Times Car Park"}]},
 
 {title:"สวนสัตว์อุเอโนะ + พิพิธภัณฑ์วิทยาศาสตร์", date:"ศุกร์ 16 ต.ค.", sub:"อยู่ใน Ueno Park เดียวกัน จอดรถที่เดียวจบ",
- stops:[
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"08:15", note:"ออกเดินทาง"},
-  {name:"Ueno Parking Center", lat:35.7127834, lng:139.7747886, time:"09:00", note:""},
-  {name:"Ueno Zoo", lat:35.7160153, lng:139.7728819, time:"09:30", note:""},
-  {name:"National Museum of Nature and Science", lat:35.7164273, lng:139.7763336, time:"13:30", note:""},
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"17:00", note:"กลับที่พัก"}],
+ gallery:[
+  {icon:"🐼", name:"Ueno Zoo", note:"ช้าง เสือ กอริลลา", q:"35.7160153,139.7728819"},
+  {icon:"🦖", name:"National Museum of Nature and Science", note:"โครงกระดูกไดโนเสาร์", q:"35.7164273,139.7763336"}],
  table:[["08:15","ออกจากบ้าน","~30–45 นาที"],
-  ["09:00","จอด 2 คันที่ <b>上野パーキングセンター</b>","เดินถึงสวนสัตว์ ~6 นาที"],
-  ["09:30","<b>สวนสัตว์อุเอโนะ</b> — โซนตะวันออก: ช้าง เสือ หมี กอริลลา","เช็คสถานะแพนด้าก่อนไป"],
+  ["09:00","จอด 2 คันที่ 上野パーキングセンター","เดินถึงสวนสัตว์ ~6 นาที"],
+  ["09:30","<b>"+P("สวนสัตว์อุเอโนะ","35.7160153,139.7728819")+"</b> — โซนตะวันออก: ช้าง เสือ หมี กอริลลา","เช็คสถานะแพนด้าก่อนไป"],
   ["11:30","โซนตะวันตก: บ่อนก ฮิปโป โซนแอฟริกา",""],
   ["12:30","ข้าวเที่ยงในสวนสัตว์ หรือแถว Ueno Park",""],
-  ["13:30","เดิน 5 นาทีไป <b>National Museum of Nature and Science</b>",""],
+  ["13:30","เดิน 5 นาทีไป <b>"+P("National Museum of Nature and Science","35.7164273,139.7763336")+"</b>",""],
   ["13:30","เน้นโซน 地球館 โครงกระดูกไดโนเสาร์","ดูไฮไลต์ 1.5–2 ชม. พอ"],
   ["16:00","เดินกลับที่จอดรถ ขับกลับบ้าน",""]],
  tips:[{type:"tip",text:"ค่าเข้ารวม 2 ที่ต่อผู้ใหญ่ ~1,230 เยน เด็ก 4 คนเข้าฟรีทั้งคู่"},
   {type:"warn",text:"หลีกเลี่ยงลานจอดแบบ 機械式 (ลิฟต์ยกรถ) จำกัดความสูง Alphard เข้าไม่ได้"}]},
 
 {title:"Maxell Aqua Park Shinagawa", date:"เสาร์ 17 ต.ค.", sub:"ดูโชว์เที่ยงแล้วปล่อยอิสระ",
- stops:[
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"09:30", note:"ออกเดินทาง"},
-  {name:"Maxell Aqua Park Shinagawa", lat:35.6282839, lng:139.7352393, time:"10:45", note:""}],
+ gallery:[
+  {icon:"🐬", name:"Maxell Aqua Park Shinagawa", note:"อุโมงค์ปลา+โชว์โลมา", q:"35.6282839,139.7352393"}],
  table:[["09:30","ออกจากบ้านแบบสบายๆ","~30–40 นาที"],
-  ["10:45","<b>Maxell Aqua Park Shinagawa</b> — อุโมงค์ปลา, Jellyfish Ramble","เปิด 10:00–20:00"],
+  ["10:45","<b>"+P("Maxell Aqua Park Shinagawa","35.6282839,139.7352393")+"</b> — อุโมงค์ปลา, Jellyfish Ramble","เปิด 10:00–20:00"],
   ["12:00","ข้าวเที่ยงในตึก",""],
   ["13:00","<b>โชว์โลมารอบเที่ยง</b>","เช็ครอบอีกครั้งก่อนไป"],
   ["~13:45","<b>จบโปรแกรม — ปล่อยอิสระ</b> เดินเล่น/ช็อปต่อ หรือแยกกันตามสะดวก","นัดเวลากลับที่พักเอง"]],
@@ -529,127 +440,64 @@ const days = [
   {type:"tip",text:"ช่วงบ่ายอิสระ ถ้าอยากมีกิจกรรมเสริม: Takanawa Gateway City หรือ atre Shinagawa (ไม่บังคับ)"}]},
 
 {title:"วันช็อปปิ้งเต็มวัน", date:"อาทิตย์ 18 ต.ค.", sub:"โซนอาซากุสะ–สกายทรี",
- stops:[
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"09:30", note:"ออกเดินทาง"},
-  {name:"Senso-ji", lat:35.7147651, lng:139.7966553, time:"10:00", note:""},
-  {name:"Don Quijote Asakusa", lat:35.7138638, lng:139.7930834, time:"11:30", note:""},
-  {name:"Tokyo Solamachi", lat:35.7102333, lng:139.8115747, time:"14:00", note:""},
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"19:00", note:"กลับที่พัก"}],
+ gallery:[
+  {icon:"⛩️", name:"Senso-ji", note:"วัด+ถนนนากามิเสะ", q:"35.7147651,139.7966553"},
+  {icon:"🛍️", name:"Don Quijote Asakusa", note:"ช้อปปิ้ง", q:"35.7138638,139.7930834"},
+  {icon:"🗼", name:"Tokyo Solamachi / Skytree", note:"ช้อป+ข้าวเย็น", q:"35.7102333,139.8115747"}],
  table:[["09:30","ออกจากบ้าน ขับไปอาซากุสะ",""],
-  ["10:00","<b>วัดเซนโซจิ + ถนนนากามิเสะ</b>",""],
-  ["11:30","<b>Don Quijote Asakusa</b>","คืนภาษีได้"],
+  ["10:00","<b>"+P("วัดเซนโซจิ","35.7147651,139.7966553")+"</b> + ถนนนากามิเสะ",""],
+  ["11:30","<b>"+P("Don Quijote Asakusa","35.7138638,139.7930834")+"</b>","คืนภาษีได้"],
   ["12:30","ข้าวเที่ยงแถวอาซากุสะ",""],
-  ["14:00","<b>Tokyo Solamachi (Skytree)</b>","ในร่มทั้งหมด มีห้องให้นม"],
+  ["14:00","<b>"+P("Tokyo Solamachi (Skytree)","35.7102333,139.8115747")+"</b>","ในร่มทั้งหมด มีห้องให้นม"],
   ["17:00","(ตัวเลือก) ขึ้น Tokyo Skytree","ต้องจองบัตรล่วงหน้า"],
   ["18:30","ข้าวเย็นที่ Solamachi",""],
   ["เย็น","<b>แพ็คกระเป๋าใบใหญ่ให้เสร็จ</b> เตรียมขนขึ้นรถตู้เองพรุ่งนี้","ไม่ส่ง Yamato แล้ว"]],
  tips:[{type:"tip",text:"ทางเลือกอื่น: Aeon Mall/LaLaport (ที่จอดกว้าง) · Ueno Ameyoko + Yodobashi Akiba · Ginza + Tokyu Plaza"}]},
 
 {title:"Tokyo → Narita → กลับบ้าน", date:"จันทร์ 19 ต.ค.", sub:"คืนรถ เช็คอินสายการบิน — ขนกระเป๋าเองกับรถตู้",
- stops:[
-  {name:"บ้านพัก Tokyo", lat:35.711567, lng:139.804612, time:"11:00", note:"เช็คเอาต์"},
-  {name:"Narita Airport T1", lat:35.7642236, lng:140.3860877, time:"15:00", note:"ดรอปผู้โดยสาร+กระเป๋า"},
-  {name:"Toyota Rent-A-Car", lat:35.7841199, lng:140.3834805, time:"15:30", note:"คืนรถ"},
-  {name:"Narita Airport T1", lat:35.7642236, lng:140.3860877, time:"16:00", note:"เช็คอินสายการบิน"}],
+ gallery:[
+  {icon:"🚗", name:"คืนรถ Toyota Rent-A-Car", note:"เติมน้ำมันก่อนคืน", q:"35.7841199,140.3834805"},
+  {icon:"✈️", name:"Narita Airport T1", note:"เดินทางกลับ", q:"35.7642236,140.3860877"}],
  table:[["09:00","อาหารเช้า เก็บของครั้งสุดท้าย ทำความสะอาดบ้าน",""],
   ["10:30","<b>ขนกระเป๋าทั้งหมดขึ้นรถตู้ 2 คัน</b>","เผื่อเวลาจัดเรียงให้พอดี"],
   ["11:00","เช็คเอาต์",""],
-  ["11:30","ช็อปปิ้ง/ข้าวเที่ยงรอบสุดท้ายใกล้บ้าน",""],
+  ["11:30","ช้อปปิ้ง/ข้าวเที่ยงรอบสุดท้ายใกล้บ้าน",""],
   ["13:30","ออกเดินทางไปสนามบิน","~1 ชม. + เผื่อรถติด"],
-  ["15:00","<b>ดรอปผู้โดยสาร + กระเป๋าทั้งหมดที่ NRT Terminal 1</b>","ขนกระเป๋าลงให้ครบ"],
-  ["15:10","คนขับ 2 คนขับรถไปคืนที่ Toyota Rent-A-Car","เติมน้ำมันเต็มก่อน"],
+  ["15:00","<b>ดรอปผู้โดยสาร + กระเป๋าทั้งหมดที่ "+P("NRT Terminal 1","35.7642236,140.3860877")+"</b>","ขนกระเป๋าลงให้ครบ"],
+  ["15:10","คนขับ 2 คนขับรถไปคืนที่ <b>"+P("Toyota Rent-A-Car","35.7841199,140.3834805")+"</b>","เติมน้ำมันเต็มก่อน"],
   ["15:30","<b>คืนรถตามกำหนด</b> + นั่งบัสกลับ Terminal 1","~20 นาที"],
   ["16:00","เช็คอินสายการบิน โหลดกระเป๋า",""],
-  ["17:00","ผ่าน ตม. + ช็อปดิวตี้ฟรี",""],
+  ["17:00","ผ่าน ตม. + ช้อปดิวตี้ฟรี",""],
   ["19:10","✈ NH805 ออกเดินทาง",""]],
  tips:[]}
 ];
 
-const daylist = document.getElementById('daylist');
-const rightPane = document.getElementById('rightPane');
-const routeSvg = document.getElementById('routeSvg');
-let current = 0;
-
-function buildDaylist(){
-  daylist.innerHTML = '';
-  days.forEach((d,i)=>{
-    const btn = document.createElement('button');
-    btn.className = 'daybtn' + (i===current ? ' active' : '');
-    btn.innerHTML = '<span class="num">'+(i+1)+'</span><span class="lbl"><b>'+d.title+'</b><span>'+d.date+'</span></span>';
-    btn.onclick = ()=>{ current = i; render(); };
-    daylist.appendChild(btn);
-  });
+function dayCard(d, i){
+  const gallery = d.gallery.map(g =>
+    '<a class="gcard" href="'+gmapUrl(g.q)+'" target="_blank" rel="noopener">'+
+      '<span class="gicon">'+g.icon+'</span>'+
+      '<span class="gtext"><b>'+g.name+'</b><span>'+g.note+'</span></span>'+
+    '</a>').join('');
+  const rows = d.table.map(r =>
+    '<tr><td class="time">'+r[0]+'</td><td class="desc">'+r[1]+'</td><td class="note">'+r[2]+'</td></tr>').join('');
+  const tips = d.tips.map(t => '<div class="'+t.type+'">'+t.text+'</div>').join('');
+  return (
+   '<section class="day" id="d'+(i+1)+'">'+
+    '<div class="day-head">'+
+      '<span class="tag">วันที่ '+(i+1)+' ของ '+days.length+' · '+d.date+'</span>'+
+      '<h3>'+d.title+'</h3>'+
+      '<div class="sub">'+d.sub+'</div>'+
+    '</div>'+
+    '<div class="day-grid">'+
+      '<div class="gallery">'+gallery+'</div>'+
+      '<div class="details"><div class="card"><table class="plan">'+rows+'</table></div>'+tips+'</div>'+
+    '</div>'+
+   '</section>');
 }
 
-function renderRoute(day){
-  const pts = day.stops;
-  const lats = pts.map(p=>p.lat), lngs = pts.map(p=>p.lng);
-  let minLat = Math.min(...lats), maxLat = Math.max(...lats);
-  let minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
-  const latSpan = Math.max(maxLat - minLat, 0.01);
-  const lngSpan = Math.max(maxLng - minLng, 0.01);
-  const W = 320, H = 340, pad = 44;
-  const scale = Math.min((W - pad*2) / lngSpan, (H - pad*2) / latSpan);
-  const cx = (minLng + maxLng) / 2, cy = (minLat + maxLat) / 2;
-  const toXY = (p)=>{
-    const x = W/2 + (p.lng - cx) * scale;
-    const y = H/2 - (p.lat - cy) * scale;
-    return [x, y];
-  };
-  const coords = pts.map(toXY);
-  let path = 'M ' + coords[0][0].toFixed(1) + ' ' + coords[0][1].toFixed(1);
-  for(let i=1;i<coords.length;i++){
-    const [px,py] = coords[i-1], [x,y] = coords[i];
-    const mx = (px+x)/2, my=(py+y)/2;
-    path += ' Q ' + mx.toFixed(1) + ' ' + my.toFixed(1) + ' ' + x.toFixed(1) + ' ' + y.toFixed(1);
-  }
-  let svg = '<defs><marker id="rarrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#2d5da1" stroke-width="2"/></marker></defs>';
-  svg += '<path d="'+path+'" fill="none" stroke="#2d5da1" stroke-width="2.5" stroke-dasharray="1 8" stroke-linecap="round" marker-end="url(#rarrow)"/>';
-  coords.forEach((c,i)=>{
-    const isEndpoint = (i===0 || i===coords.length-1);
-    const r = isEndpoint ? 7 : 5.5;
-    const fill = isEndpoint ? '#ff4d4d' : '#2d5da1';
-    svg += '<circle cx="'+c[0].toFixed(1)+'" cy="'+c[1].toFixed(1)+'" r="'+r+'" fill="'+fill+'" stroke="#2d2d2d" stroke-width="2"/>';
-    svg += '<text x="'+c[0].toFixed(1)+'" y="'+c[1].toFixed(1)+'" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#fff" font-weight="700" font-family=\'Mali\'>'+(i+1)+'</text>';
-    const labelY = c[1] < H/2 ? c[1] - 14 : c[1] + 20;
-    let label = pts[i].name;
-    if(label.length > 15) label = label.slice(0,14) + '…';
-    svg += '<text x="'+c[0].toFixed(1)+'" y="'+labelY.toFixed(1)+'" text-anchor="middle" font-size="10" fill="#2d2d2d" font-family=\'Mali\'>'+label+'</text>';
-    svg += '<text x="'+c[0].toFixed(1)+'" y="'+(labelY + (c[1]<H/2?-11:11)).toFixed(1)+'" text-anchor="middle" font-size="9" fill="#ff4d4d" font-weight="700" font-family=\'Mali\'>'+pts[i].time+'</text>';
-  });
-  routeSvg.innerHTML = svg;
-}
-
-function renderRight(day, idx){
-  let html = '<div class="daytitle"><span class="tag">วันที่ '+(idx+1)+' ของ 13</span>';
-  html += '<h3>'+day.title+'</h3><div class="sub">'+day.date+' — '+day.sub+'</div></div>';
-  html += '<div class="card"><table class="plan">';
-  day.table.forEach(r=>{
-    html += '<tr><td class="time">'+r[0]+'</td><td class="desc">'+r[1]+'</td><td class="note">'+r[2]+'</td></tr>';
-  });
-  html += '</table></div>';
-  day.tips.forEach(t=>{
-    html += '<div class="'+t.type+'">'+t.text+'</div>';
-  });
-  html += '<div class="navbtns">';
-  html += '<button id="prevBtn" '+(idx===0?'disabled':'')+'>← วันก่อนหน้า</button>';
-  html += '<button id="nextBtn" '+(idx===days.length-1?'disabled':'')+'>วันถัดไป →</button>';
-  html += '</div>';
-  rightPane.innerHTML = html;
-  document.getElementById('prevBtn').onclick = ()=>{ if(current>0){current--; render();} };
-  document.getElementById('nextBtn').onclick = ()=>{ if(current<days.length-1){current++; render();} };
-}
-
-function render(){
-  buildDaylist();
-  renderRoute(days[current]);
-  renderRight(days[current], current);
-  rightPane.scrollTop = 0;
-  const activeBtn = daylist.querySelector('.daybtn.active');
-  if(activeBtn) activeBtn.scrollIntoView({block:'nearest', inline:'nearest'});
-}
-
-render();
+document.getElementById('dayContainer').innerHTML = days.map(dayCard).join('');
+document.getElementById('dayjump').innerHTML = days.map((d,i) =>
+  '<a href="#d'+(i+1)+'"><b>'+(7+i)+'</b><span>ต.ค.</span></a>').join('');
 </script>
 </body>
 </html>
