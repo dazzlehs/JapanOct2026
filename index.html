@@ -60,17 +60,6 @@
   @keyframes bounce{0%,100%{transform:rotate(8deg) translateY(0);} 50%{transform:rotate(-6deg) translateY(-4px);}}
   @keyframes wiggle{0%,100%{transform:rotate(-4deg);} 50%{transform:rotate(4deg);}}
 
-  /* ===== TOP NAV ===== */
-  .topnav{position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:3px dashed var(--border); padding:12px 0;}
-  .topnav-inner{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:1200px; margin:0 auto; padding:0 20px;}
-  .topnav a{flex:0 0 auto; text-decoration:none; font-size:15px; color:var(--fg); background:var(--paper-white);
-    border:2px solid var(--border); border-radius:var(--wobbly-sm); padding:6px 16px; white-space:nowrap;
-    box-shadow:3px 3px 0 var(--border); transition:transform .1s, box-shadow .1s;}
-  .topnav a:nth-child(odd){transform:rotate(-1deg);}
-  .topnav a:nth-child(even){transform:rotate(1deg);}
-  .topnav a:hover{background:var(--accent); color:#fff; border-color:var(--border);
-    box-shadow:1px 1px 0 var(--border); transform:translate(2px,2px) rotate(0deg);}
-
   main{max-width:1440px; margin:0 auto; padding:44px 28px 20px;}
   .section-title{font-size:24px; font-weight:700; margin:0 0 4px; display:inline-block;}
   .section-lede{color:var(--fg); font-size:15px; margin:0 0 20px; opacity:.75;}
@@ -126,34 +115,6 @@
   .warn{background:#ffe3e3; box-shadow:3px 3px 0 var(--border); transform:rotate(.7deg); border-color:var(--accent);}
   .warn b{color:var(--accent);}
 
-  /* ===== REF SECTIONS ===== */
-  .ref{margin-bottom:48px;}
-  .ref-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;}
-  .ref-card{background:var(--paper-white); border:2px solid var(--border); padding:18px 20px; position:relative;
-    box-shadow:4px 4px 0 var(--border);}
-  .ref-card:nth-child(4n+1){border-radius:var(--wobbly); transform:rotate(-1deg);}
-  .ref-card:nth-child(4n+2){border-radius:var(--wobbly-2); transform:rotate(1deg);}
-  .ref-card:nth-child(4n+3){border-radius:var(--wobbly-md); transform:rotate(-1deg);}
-  .ref-card:nth-child(4n+4){border-radius:var(--wobbly); transform:rotate(1deg);}
-  .ref-card:hover{transform:rotate(0deg); transition:transform .15s;}
-  .ref-card .tack{position:absolute; top:-9px; left:50%; transform:translateX(-50%); width:16px; height:16px;
-    border-radius:50%; background:radial-gradient(circle at 35% 35%, #ff8080, var(--accent)); border:1.5px solid var(--border);}
-  .ref-card h3{font-size:17px; margin:6px 0 10px;}
-  .ref-card ul{margin:0; padding-left:20px; font-size:14px; opacity:.8;}
-  .ref-card ul li{margin-bottom:7px;} .ref-card ul li b{color:var(--fg); opacity:1;}
-  table.simple{width:100%; border-collapse:collapse; font-size:14px;}
-  table.simple th{text-align:left; border-bottom:2px dashed var(--border); padding:8px 10px; font-size:12px; opacity:.7;}
-  table.simple td{padding:9px 10px; border-bottom:1.5px dashed var(--muted); opacity:.85;}
-  table.simple td.strong{color:var(--fg); font-weight:700; opacity:1;} table.simple tr:last-child td{border-bottom:none;}
-  .checklist{list-style:none; margin:0; padding:0;}
-  .checklist li{display:flex; gap:10px; padding:10px 0; border-bottom:1.5px dashed var(--muted); font-size:14.5px;}
-  .checklist li:last-child{border-bottom:none;}
-  .checklist .box{flex:0 0 auto; width:18px; height:18px; margin-top:2px; border:2.5px solid var(--accent2);
-    border-radius:5px 2px 5px 2px; transform:rotate(-3deg);}
-
-  .tape{position:absolute; top:-12px; left:50%; transform:translateX(-50%) rotate(-3deg); width:70px; height:22px;
-    background:rgba(230,220,190,.75); border:1px solid rgba(150,140,110,.4); box-shadow:0 1px 2px rgba(0,0,0,.08);}
-
   footer{text-align:center; padding:36px 20px 56px; opacity:.75; font-size:14px;}
   footer .hand-heavy{display:block; font-size:20px; color:var(--accent2); margin-bottom:6px;}
 
@@ -178,14 +139,6 @@
   <p class="dates">7 – 19 ตุลาคม 2026 · 13 วัน 12 คืน</p>
 </header>
 
-<nav class="topnav">
-  <div class="topnav-inner">
-    <a href="#itinerary">แผนเส้นทางรายวัน</a>
-    <a href="#logistics">ข้อมูลสำคัญ</a>
-    <a href="#checklist">Checklist</a>
-  </div>
-</nav>
-
 <main>
 
   <section id="itinerary">
@@ -193,75 +146,6 @@
     <p class="section-lede">เลื่อนดูได้เลยทีละวัน — แตะตัวเลขเพื่อกระโดดไปวันนั้น · แตะชื่อสถานที่เพื่อเปิด Google Maps</p>
     <div class="dayjump" id="dayjump"></div>
     <div id="dayContainer"></div>
-  </section>
-
-  <section id="logistics" class="ref">
-    <p class="section-title wavy-u">ข้อมูลสำคัญ & การเตรียมตัว</p>
-    <h3 style="margin:20px 0 12px; font-size:18px;">🅿️ ที่จอดรถช่วงอยู่โตเกียว</h3>
-    <div class="card" style="padding:16px 20px; margin-bottom:18px; border-radius:var(--wobbly-md); transform:rotate(-.5deg);">
-      <div class="tape"></div>
-      <table class="simple">
-        <tr><th>วัน</th><th>จุดหมาย</th><th>ที่จอด</th><th>ราคาโดยประมาณ (2 คัน)</th></tr>
-        <tr><td class="strong">16 ต.ค.</td><td>วันอิสระ/ช้อปปิ้งตามใจชอบ</td><td>แล้วแต่จุดที่แต่ละครอบครัวไป</td><td>—</td></tr>
-        <tr><td class="strong">17 ต.ค.</td><td>สวนสัตว์อุเอโนะ+พิพิธภัณฑ์</td><td>上野パーキングセンター (自走式)</td><td>~6,000 เยน/วัน</td></tr>
-        <tr><td class="strong">18 ต.ค.</td><td>Aqua Park Shinagawa (เช้า) → อาซากุสะ/Solamachi (บ่าย-เย็น)</td><td>ลานจอด Shinagawa Prince Hotel → ลานจอด Tokyo Skytree Town</td><td>~500 เยน/30 นาที + ~350 เยน/30 นาที</td></tr>
-        <tr><td class="strong">ทุกคืน</td><td>บ้านพักโตเกียว</td><td>ถามเจ้าของบ้าน / akippa</td><td>2,000–3,500 เยน/คืน</td></tr>
-      </table>
-      <div class="warn" style="margin-top:16px;">ห้ามจอดริมถนนเด็ดขาด ค่าปรับ 15,000–18,000 เยน · หลีกเลี่ยงลานแบบ機械式(ลิฟต์ยกรถ) เลือก自走式เท่านั้น</div>
-    </div>
-    <div class="ref-grid">
-      <div class="ref-card"><span class="tack"></span>
-        <h3>🚗 เรื่องรถ & การขับ</h3>
-        <ul>
-          <li><b>คาร์ซีท</b> 4 ตัว บังคับใช้เด็กต่ำกว่า 6 ปี ~1,100 เยน/ตัว/ทริป</li>
-          <li><b>ETC card</b> เช่าติดรถทั้ง 2 คัน — ทางด่วนรวม ~25,000–35,000 เยน/คัน</li>
-          <li><b>IDP</b> แบบอนุสัญญาเจนีวา 1949 + ใบขับขี่ไทยตัวจริง</li>
-          <li>ตั้งกลุ่ม LINE คนขับ นัดจุดพบก่อนออกรถทุกครั้ง</li>
-          <li>คนท้องนั่งเบาะกลาง captain seat ตลอดทริป แวะห้องน้ำทุก 1.5–2 ชม.</li>
-        </ul>
-      </div>
-      <div class="ref-card"><span class="tack"></span>
-        <h3>🤰 เรื่องคนท้อง</h3>
-        <ul>
-          <li>แจ้งสายการบินล่วงหน้า เช็คใบรับรองแพทย์ (ANA มักขอถ้า 28 สัปดาห์+)</li>
-          <li>ขอ マタニティマーク (Maternity Mark) ที่สนามบิน/สถานี</li>
-          <li>ออนเซ็นคุซัทสึร้อน+กรดจัด → เน้นบ่อแช่เท้า ไม่แช่เกิน 10 นาที</li>
-          <li>ซื้อประกันเดินทางที่ครอบคลุมภาวะตั้งครรภ์</li>
-        </ul>
-      </div>
-      <div class="ref-card"><span class="tack"></span>
-        <h3>👶 เรื่องเด็กเล็ก 4 คน</h3>
-        <ul>
-          <li>รถเข็น 2 คันน่าจะพอ สลับกันใช้</li>
-          <li>ผ้าอ้อม/นมซื้อที่ญี่ปุ่นได้เลย (Matsumoto Kiyoshi / Welcia)</li>
-          <li>ต.ค. กลางวัน 12–22°C สบาย แต่ Nikko/Kusatsu กลางคืนอาจ 5–8°C</li>
-          <li>พกยาสามัญเด็ก ยาลดไข้ เทอร์โมมิเตอร์ไปเอง</li>
-        </ul>
-      </div>
-      <div class="ref-card"><span class="tack"></span>
-        <h3>📦 แผนกระเป๋า</h3>
-        <ul>
-          <li><b>7 ต.ค.</b> ส่งกระเป๋าครึ่งหลังจากสนามบิน → Funatsu</li>
-          <li><b>12 ต.ค.</b> รับกระเป๋าครึ่งหลังที่ Funatsu Center</li>
-          <li><b>13–14 ต.ค.</b> ส่งกระเป๋าเสื้อผ้าใช้แล้วไปโตเกียว</li>
-          <li><b>19 ต.ค.</b> ขนกระเป๋าทั้งหมดไปกับรถตู้เองถึงสนามบิน</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="checklist" class="ref">
-    <p class="section-title wavy-u">✅ Checklist จองล่วงหน้า</p>
-    <div class="card" style="padding:8px 22px; margin-top:16px; border-radius:var(--wobbly-md); transform:rotate(.4deg);">
-      <ul class="checklist">
-        <li><span class="box"></span>บัตร Maxell Aqua Park Shinagawa (e-ticket) — 18 ต.ค.</li>
-        <li><span class="box"></span>บัตรเข้า Tobu World Square — ตัดออกจากแผนแล้ว (ไม่ต้องจอง)</li>
-        <li><span class="box"></span>จองร้านอาหารกลุ่ม 11 คน: Ishizaki (7 ต.ค.), Tonkame (8 ต.ค.), โซบะ/สเต็กที่นิกโก้ (9 ต.ค.), <b>Sukiyaki Soshiji Kusatsu — จองแล้ว 10 ต.ค. 16:30</b>, Uoshige (12 ต.ค.)</li>
-        <li><span class="box"></span>บัตร Tokyo Skytree (ถ้าจะขึ้น)</li>
-        <li><span class="box"></span>เช็คเวลาเปิด Fuji Safari Park / Makaino Farm ก่อนไปวันที่ 13 (เลือกอย่างใดอย่างหนึ่ง)</li>
-        <li><span class="box"></span>เช็คเวลาปิดเคาน์เตอร์ Yamato ใกล้บ้านพักโตเกียว — ต้องส่งกระเป๋าใหญ่ก่อน 21:00 เย็นวันที่ 16 ต.ค.</li>
-      </ul>
-    </div>
   </section>
 
 
@@ -372,21 +256,18 @@ const days = [
   ["18:00","มื้อเย็นที่ <b>"+P("Uoshige 海賊料理魚重","海賊料理魚重 河口湖")+"</b>","ช่วงบ่าย-เย็นรถน่าจะติดเพราะวันหยุดยาว เผื่อเวลาเดินทางเยอะๆ"]],
  tips:[{type:"warn",text:"วันหยุดยาววันสุดท้าย ถนนขาเข้า Kawaguchiko ช่วงบ่าย–เย็นติดหนัก เผื่อเวลาเดินทางอย่างน้อย +1 ชม."}]},
 
-{title:"Kawaguchiko: หมู่บ้านน้ำใส Oshino Hakkai", date:"อังคาร 13 ต.ค.", sub:"เที่ยว Oshino Hakkai วนรอบทะเลสาบ แล้วแต่เวลาแวะฟาร์มหรือซาฟารี",
+{title:"Kawaguchiko: หาดชิราโทริ + ฟาร์มมาไกโนะ", date:"อังคาร 13 ต.ค.", sub:"เช้าเดินเล่นหาดชิราโทริริมทะเลสาบ ถ่ายรูปฟูจิ บ่ายแวะฟาร์มมาไกโนะถ้ามีเวลา",
  gallery:[
-  {icon:"💧", name:"Oshino Hakkai (หมู่บ้านน้ำใส)", note:"บ่อน้ำใส 8 บ่อ", q:"忍野八海"},
-  {icon:"🌸", name:"Oishi Park", note:"ถ่ายรูปวิวฟูจิ", q:"35.522904,138.7457522"},
-  {icon:"🐄", name:"Makaino Farm resort", note:"ตัวเลือกถ้ามีเวลา", q:"まかいの牧場"},
-  {icon:"🦁", name:"Fuji Safari Park", note:"ตัวเลือกถ้าอยากดูสัตว์", q:"富士サファリパーク"}],
+  {icon:"🏖️", name:"Shiratori Beach 白鳥浜", note:"เดินเล่น/ถ่ายรูปฟูจิ", q:"白鳥浜 河口湖"},
+  {icon:"🐄", name:"Makaino Farm resort", note:"ตัวเลือกถ้ามีเวลา", q:"まかいの牧場"}],
  table:[["09:00","เช็ควิวฟูจิจากบ้าน/ทะเลสาบตอนเช้า","ชัดสุดช่วง 6–9 โมงเช้า"],
-  ["09:30","ขับไป <b>"+P("Oshino Hakkai หมู่บ้านน้ำใส","忍野八海")+"</b> ชมบ่อน้ำใส 8 บ่อ","~20 นาทีจาก Kawaguchiko"],
-  ["11:30","ข้าวเที่ยงแถว Oshino Hakkai (โซบะ/ของทอด)",""],
-  ["13:00","วนรอบทะเลสาบ แวะ <b>"+P("Oishi Park","35.522904,138.7457522")+"</b> ถ่ายรูปฟูจิ+ทุ่งดอกไม้",""],
-  ["14:30","(ถ้ามีเวลา) เลือกไป <b>"+P("Makaino Farm resort","まかいの牧場")+"</b> (ฟาร์มสัตว์เล็กๆ) หรือ <b>"+P("Fuji Safari Park","富士サファリパーク")+"</b> (ดูสัตว์ใหญ่)","ทั้งสองที่ไกลขึ้น ~40–50 นาที เผื่อเวลาเดินทาง เลือกอย่างเดียวพอ"],
-  ["17:30","กลับที่พัก",""],
+  ["09:30","ขับไป <b>"+P("Shiratori Beach หาดชิราโทริ","白鳥浜 河口湖")+"</b> เดินเล่นชายหาดริมทะเลสาบ ถ่ายรูปฟูจิ",""],
+  ["11:30","ข้าวเที่ยงในเมือง Kawaguchiko",""],
+  ["13:30","(ถ้ามีเวลา) ขับไป <b>"+P("Makaino Farm resort","まかいの牧場")+"</b> ฟาร์มสัตว์เล็กๆ ป้อนนม/รีดนมแพะ","ไกลขึ้น ~40–50 นาที เผื่อเวลาเดินทาง"],
+  ["17:00","กลับที่พัก",""],
   ["18:30","มื้อเย็นในเมือง Kawaguchiko / ทำกับข้าวที่บ้าน — <b>ซื้อของไว้กินมื้อเช้าด้วยเพราะพรุ่งนี้ออกแต่เช้า</b>",""]],
- tips:[{type:"tip",text:"Oshino Hakkai เดินง่าย เหมาะกับเด็กเล็กและคนท้อง ไม่มีบันไดเยอะ"},
-  {type:"tip",text:"Makaino Farm เหมาะเด็กเล็ก (ป้อนนม/รีดนมแพะ) ส่วน Fuji Safari Park เหมาะถ้าอยากดูสัตว์ใหญ่แบบซาฟารี — เวลาไม่พอสองที่ เลือกอย่างใดอย่างหนึ่ง"}]},
+ tips:[{type:"tip",text:"Shiratori Beach เดินง่าย เหมาะกับเด็กเล็กและคนท้อง ไม่มีบันไดเยอะ ชายหาดกรวดริมทะเลสาบ วิวฟูจิสวย"},
+  {type:"tip",text:"Makaino Farm เหมาะเด็กเล็ก (ป้อนนม/รีดนมแพะ) ถ้าไม่อยากขับไกลข้ามได้ พักผ่อนที่บ้านแทน"}]},
 
 {title:"Kawaguchiko → Gotemba → Kamakura", date:"พุธ 14 ต.ค.", sub:"วันช็อปเอาต์เล็ตที่คุ้มที่สุดของทริป",
  gallery:[
