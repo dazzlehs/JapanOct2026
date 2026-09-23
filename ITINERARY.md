@@ -140,26 +140,25 @@ _ออกไม่เกิน 8 โมง แวะ Onioshidashi เก็บ�
 
 ## วันที่ 7 — อังคาร 13 ต.ค.
 
-### Kawaguchiko: หมู่บ้านน้ำใส Oshino Hakkai
+### Kawaguchiko: หาดชิราโทริ + ฟาร์มมาไกโนะ
 
-_เที่ยว Oshino Hakkai วนรอบทะเลสาบ แล้วแต่เวลาแวะฟาร์มหรือซาฟารี_
+_เช้าส่งกระเป๋าเสื้อผ้าใช้แล้วกลับสนามบิน แล้วเดินเล่นหาดชิราโทริริมทะเลสาบ ถ่ายรูปฟูจิ บ่ายแวะฟาร์มมาไกโนะถ้ามีเวลา_
 
-**ไฮไลต์ของวันนี้:** [💧 Oshino Hakkai (หมู่บ้านน้ำใส)](https://www.google.com/maps/search/?api=1&query=%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7) · [🌸 Oishi Park](https://www.google.com/maps/search/?api=1&query=35.522904%2C138.7457522) · [🐄 Makaino Farm resort](https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%8B%E3%81%84%E3%81%AE%E7%89%A7%E5%A0%B4) · [🦁 Fuji Safari Park](https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF)
+**ไฮไลต์ของวันนี้:** [📦 Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278) · [🏖️ Shiratori Beach 白鳥浜](https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E6%B5%9C%20%E6%B2%B3%E5%8F%A3%E6%B9%96) · [🐄 Makaino Farm resort](https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%8B%E3%81%84%E3%81%AE%E7%89%A7%E5%A0%B4)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
 | 09:00 | เช็ควิวฟูจิจากบ้าน/ทะเลสาบตอนเช้า | ชัดสุดช่วง 6–9 โมงเช้า |
 | 09:15 | แวะส่งกระเป๋าเสื้อผ้าใช้แล้ว (7–12 ต.ค.) ที่เคาน์เตอร์ **[Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278)** ไปยัง Narita Airport Terminal 1 | ระบุวันรับ 19 ต.ค. เก็บใบเสร็จ/เลขพัสดุไว้ |
-| 09:30 | ขับไป **[Oshino Hakkai หมู่บ้านน้ำใส](https://www.google.com/maps/search/?api=1&query=%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7)** ชมบ่อน้ำใส 8 บ่อ | ~20 นาทีจาก Kawaguchiko |
-| 11:30 | ข้าวเที่ยงแถว Oshino Hakkai (โซบะ/ของทอด) |  |
-| 13:00 | วนรอบทะเลสาบ แวะ **[Oishi Park](https://www.google.com/maps/search/?api=1&query=35.522904%2C138.7457522)** ถ่ายรูปฟูจิ+ทุ่งดอกไม้ |  |
-| 14:30 | (ถ้ามีเวลา) เลือกไป **[Makaino Farm resort](https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%8B%E3%81%84%E3%81%AE%E7%89%A7%E5%A0%B4)** (ฟาร์มสัตว์เล็กๆ) หรือ **[Fuji Safari Park](https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%83%91%E3%83%BC%E3%82%AF)** (ดูสัตว์ใหญ่) | ทั้งสองที่ไกลขึ้น ~40–50 นาที เผื่อเวลาเดินทาง เลือกอย่างเดียวพอ |
-| 17:30 | กลับที่พัก |  |
+| 09:30 | ขับไป **[Shiratori Beach หาดชิราโทริ](https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E6%B5%9C%20%E6%B2%B3%E5%8F%A3%E6%B9%96)** เดินเล่นชายหาดริมทะเลสาบ ถ่ายรูปฟูจิ |  |
+| 11:30 | ข้าวเที่ยงในเมือง Kawaguchiko |  |
+| 13:30 | (ถ้ามีเวลา) ขับไป **[Makaino Farm resort](https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%8B%E3%81%84%E3%81%AE%E7%89%A7%E5%A0%B4)** ฟาร์มสัตว์เล็กๆ ป้อนนม/รีดนมแพะ | ไกลขึ้น ~40–50 นาที เผื่อเวลาเดินทาง |
+| 17:00 | กลับที่พัก |  |
 | 18:30 | มื้อเย็นในเมือง Kawaguchiko / ทำกับข้าวที่บ้าน — **ซื้อของไว้กินมื้อเช้าด้วยเพราะพรุ่งนี้ออกแต่เช้า** |  |
 
-> **💡 ทิป:** Oshino Hakkai เดินง่าย เหมาะกับเด็กเล็ก ไม่มีบันไดเยอะ
+> **💡 ทิป:** Shiratori Beach เดินง่าย เหมาะกับเด็กเล็กและคนท้อง ไม่มีบันไดเยอะ ชายหาดกรวดริมทะเลสาบ วิวฟูจิสวย
 
-> **💡 ทิป:** Makaino Farm เหมาะเด็กเล็ก (ป้อนนม/รีดนมแพะ) ส่วน Fuji Safari Park เหมาะถ้าอยากดูสัตว์ใหญ่แบบซาฟารี — เวลาไม่พอสองที่ เลือกอย่างใดอย่างหนึ่ง
+> **💡 ทิป:** Makaino Farm เหมาะเด็กเล็ก (ป้อนนม/รีดนมแพะ) ถ้าไม่อยากขับไกลข้ามได้ พักผ่อนที่บ้านแทน
 
 ---
 
