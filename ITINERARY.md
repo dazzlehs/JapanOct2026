@@ -264,10 +264,9 @@ _เช้าดูโชว์โลมาที่ Aqua Park Shinagawa บ่�
 | 10:00 | **[Maxell Aqua Park Shinagawa](https://www.google.com/maps/search/?api=1&query=35.6282839%2C139.7352393)** — อุโมงค์ปลา, Jellyfish Ramble | เข้าก่อนคนเยอะ |
 | 11:30 | **โชว์โลมา** | เช็ครอบอีกครั้งก่อนไป |
 | 12:30 | ข้าวเที่ยงในตึก / แถวชินางาวะ |  |
-| 13:15 | เดินทางกลับอาซากุสะ | ~40 นาที ขึ้นกับรถติด |
-| 14:00 | **[วัดเซนโซจิ](https://www.google.com/maps/search/?api=1&query=35.7147651%2C139.7966553)** + เดินเล่น/ช้อปของฝากถนนนากามิเสะ |  |
-| 16:00 | เดินกลับที่พัก |  |
-| 17:00 | มื้อเย็นที่ **[Shabu-shabu Onyasai Asakusa](https://www.google.com/maps/search/?api=1&query=Shabu-shabu%20Onyasai%20Asakusa)** | จองโต๊ะแล้ว 11 คน ยืนยันผ่าน ebica |
+| 13:15 | เดินทางกลับอาซากุสะ จอดรถที่บ้านพัก | ~40 นาที ขึ้นกับรถติด |
+| 14:00 | เดินออกไป **[วัดเซนโซจิ](https://www.google.com/maps/search/?api=1&query=35.7147651%2C139.7966553)** + เดินเล่น/ช้อปของฝากถนนนากามิเสะ |  |
+| 17:00 | มื้อเย็นที่ **[Shabu-shabu Onyasai Asakusa](https://www.google.com/maps/search/?api=1&query=Shabu-shabu%20Onyasai%20Asakusa)** | จองโต๊ะแล้ว 11 คน ยืนยันผ่าน ebica — เดินต่อไปกินเลย ไม่ต้องกลับบ้านก่อน |
 
 > **💡 ทิป:** ค่าเข้า Aqua Park: ผู้ใหญ่ 2,500–2,800 / ประถม-มัธยมต้น 1,300 / เด็ก 4 ขวบขึ้นไป 800 เยน ซื้อ e-ticket ล่วงหน้า
 
