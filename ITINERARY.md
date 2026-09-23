@@ -164,22 +164,23 @@ _เช้าส่งกระเป๋าเสื้อผ้าใช้แ�
 
 ## วันที่ 8 — พุธ 14 ต.ค.
 
-### Kawaguchiko → Gotemba → Kamakura
+### Kawaguchiko → เก็บองุ่น → Shinjuku
 
-_วันช็อปเอาต์เล็ตที่คุ้มที่สุดของทริป_
+_เช้าแวะเก็บองุ่นระหว่างทาง บ่ายเข้า Shinjuku มื้อเย็นร้านเกาหลีที่จองไว้ แล้วเดินเล่นย่านสถานี_
 
-**ไฮไลต์ของวันนี้:** [🛍️ Gotemba Premium Outlets](https://www.google.com/maps/search/?api=1&query=35.307271%2C138.9656467) · [🏠 STELLA STORIA Kamakura](https://www.google.com/maps/search/?api=1&query=35.3105021%2C139.5412421) · [🏖️ Yuigahama Beach](https://www.google.com/maps/search/?api=1&query=%E7%94%B1%E6%AF%94%E3%83%B6%E6%B5%9C)
+**ไฮไลต์ของวันนี้:** [🍇 Furuya Farm](https://www.google.com/maps/search/?api=1&query=%E5%8F%A4%E5%B1%8B%E8%BE%B2%E5%9C%92%20%E7%94%B2%E5%B7%9E%E5%B8%82) · [🏨 ที่พัก Shinjuku](https://www.google.com/maps/search/?api=1&query=35.7020736%2C139.6934175) · [🍗 Kankokuizakaya & Chicken Urizip](https://www.google.com/maps/search/?api=1&query=Kankokuizakaya%26Chicken%20Urizip) · [🌆 Shinjuku Station](https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%AE%BF%E9%A7%85)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
-| 09:00 | เก็บของ (ถ้าส่งกระเป๋าล่วงหน้า แวะ Funatsu Center ก่อน) |  |
-| 10:00 | เช็คเอาต์ ขับไป **[Gotemba Premium Outlets](https://www.google.com/maps/search/?api=1&query=35.307271%2C138.9656467)** (~1 ชม.) |  |
-| 11:00 | ช็อปเอาต์เล็ต + ข้าวเที่ยง | มีโซนเด็กเล่น + รถเข็นยืม |
-| 14:00 | ขับต่อไป Kamakura (~1 ชม. 30 นาที) |  |
-| 16:00 | เช็คอิน **[STELLA STORIA Yuigahama](https://www.google.com/maps/search/?api=1&query=35.3105021%2C139.5412421)** |  |
-| 17:00 | เดินเล่นหาด **[Yuigahama](https://www.google.com/maps/search/?api=1&query=%E7%94%B1%E6%AF%94%E3%83%B6%E6%B5%9C)** ดูพระอาทิตย์ตก | ทะเลใกล้บ้านมาก |
+| 09:00 | เก็บของ เช็คเอาต์จากที่พัก Kawaguchiko |  |
+| 09:30 | ขับไปเก็บองุ่นที่ **[Furuya Farm](https://www.google.com/maps/search/?api=1&query=%E5%8F%A4%E5%B1%8B%E8%BE%B2%E5%9C%92%20%E7%94%B2%E5%B7%9E%E5%B8%82)** หรือฟาร์มใกล้เคียงแถว Katsunuma | แวะระหว่างทาง ~40–50 นาทีจาก Kawaguchiko |
+| 11:30 | เก็บองุ่น + ชิมองุ่นในฟาร์ม | เช็ครอบเปิด/ราคาก่อนไปหน้างาน |
+| 13:00 | ขับต่อไป **[ที่พัก Shinjuku](https://www.google.com/maps/search/?api=1&query=35.7020736%2C139.6934175)** (~1.5–2 ชม. ขึ้นกับรถติด) |  |
+| 15:30 | เช็คอินที่พัก |  |
+| 16:30 | มื้อเย็นที่ **[Kankokuizakaya & Chicken Urizip](https://www.google.com/maps/search/?api=1&query=Kankokuizakaya%26Chicken%20Urizip)** | จองโต๊ะแล้ว 11 คน ยืนยันผ่าน Rakuten Gurunavi |
+| 18:00 | เดินเล่นย่าน **[Shinjuku Station](https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%AE%BF%E9%A7%85)** | ร้านและห้างเยอะ ใกล้ที่พัก |
 
-> **💡 ทิป:** วันนี้คือวันช็อปแบรนด์เนม/รองเท้า/เสื้อผ้าเด็กที่คุ้มที่สุดของทริป เผื่อกระเป๋าไว้ด้วย
+> **💡 ทิป:** ฤดูเก็บองุ่นแถว Katsunuma อยู่ช่วง ส.ค.–ต้น พ.ย. โทร/เช็คออนไลน์ว่าฟาร์มเปิดวันนั้นก่อนไป
 
 ---
 
