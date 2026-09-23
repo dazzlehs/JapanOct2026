@@ -8,7 +8,7 @@
 
 _ถึงญี่ปุ่น รับรถเช่า มื้อเย็นซีฟู้ดสด แล้วช้อปวัตถุดิบเผื่อ 2 วัน_
 
-**ไฮไลต์ของวันนี้:** [✈️ Narita Airport T1](https://www.google.com/maps/search/?api=1&query=35.7642236%2C140.3860877) · [🚗 Toyota Rent-A-Car](https://www.google.com/maps/search/?api=1&query=35.7841199%2C140.3834805) · [🍤 Ishizaki 海鮮食事処いしざき](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%AE%AE%E9%A3%9F%E4%BA%8B%E5%87%A6%E3%81%84%E3%81%97%E3%81%96%E3%81%8D%20%E8%8C%A8%E5%9F%8E) · [🛒 Kasumi Food Square 小川店](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%BC%E3%83%89%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AB%E3%82%B9%E3%83%9F%20%E5%B0%8F%E5%B7%9D%E5%BA%97) · [🏠 MOKURe](https://www.google.com/maps/search/?api=1&query=36.1453529%2C140.3401946)
+**ไฮไลต์ของวันนี้:** [✈️ Narita Airport T1](https://www.google.com/maps/search/?api=1&query=35.7642236%2C140.3860877) · [🚗 Toyota Rent-A-Car](https://www.google.com/maps/search/?api=1&query=35.7841199%2C140.3834805) · [🍤 Ishizaki](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%AE%AE%E9%A3%9F%E4%BA%8B%E5%87%A6%E3%81%84%E3%81%97%E3%81%96%E3%81%8D%20%E8%8C%A8%E5%9F%8E) · [🛒 Kasumi Food Square (สาขา Ogawa)](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%BC%E3%83%89%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AB%E3%82%B9%E3%83%9F%20%E5%B0%8F%E5%B7%9D%E5%BA%97) · [🏠 MOKURe](https://www.google.com/maps/search/?api=1&query=36.1453529%2C140.3401946)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
@@ -18,8 +18,8 @@ _ถึงญี่ปุ่น รับรถเช่า มื้อเย�
 | 16:20 | ขึ้นรถบัสฟรีไปสำนักงาน [Toyota Rent-A-Car](https://www.google.com/maps/search/?api=1&query=35.7841199%2C140.3834805) | ป้ายรถหน้าอาคาร |
 | 16:40 | รับรถ 2 คัน — ตรวจคาร์ซีท 4 ตัว, ตั้ง ETC, Google Maps | เผื่อเวลา 40 นาที |
 | 17:20 | ออกเดินทาง ~1 ชม. 20 นาที | มืดแล้ว คนขับเพิ่งบิน 6 ชม. |
-| 18:40 | มื้อเย็นที่ **[Ishizaki 海鮮食事処いしざき](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%AE%AE%E9%A3%9F%E4%BA%8B%E5%87%A6%E3%81%84%E3%81%97%E3%81%96%E3%81%8D%20%E8%8C%A8%E5%9F%8E)** ซีฟู้ดสดจากอิบารากิ | ควรโทรจองโต๊ะ 11 คนล่วงหน้า |
-| 20:00 | แวะ **[Kasumi フードスクエアカスミ 小川店](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%BC%E3%83%89%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AB%E3%82%B9%E3%83%9F%20%E5%B0%8F%E5%B7%9D%E5%BA%97)** ซื้อวัตถุดิบทำอาหารเช้า 2 วัน (8 และ 9 ต.ค.) | ซื้อของใช้จำเป็นอื่นเผื่อไว้ด้วย |
+| 18:40 | มื้อเย็นที่ **[Ishizaki](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%AE%AE%E9%A3%9F%E4%BA%8B%E5%87%A6%E3%81%84%E3%81%97%E3%81%96%E3%81%8D%20%E8%8C%A8%E5%9F%8E)** ซีฟู้ดสดจากอิบารากิ | ควรโทรจองโต๊ะ 11 คนล่วงหน้า |
+| 20:00 | แวะ **[Kasumi (สาขา Ogawa)](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%BC%E3%83%89%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%82%AB%E3%82%B9%E3%83%9F%20%E5%B0%8F%E5%B7%9D%E5%BA%97)** ซื้อวัตถุดิบทำอาหารเช้า 2 วัน (8 และ 9 ต.ค.) | ซื้อของใช้จำเป็นอื่นเผื่อไว้ด้วย |
 | 20:45 | เช็คอิน **[MOKURe](https://www.google.com/maps/search/?api=1&query=36.1453529%2C140.3401946)** |  |
 
 > **💡 ทิป:** คนขับ 2 คนควรเป็นคนที่ได้นอนบนเครื่อง วันแรกอย่าฝืน ถ้าเหนื่อยให้แวะพัก SA/PA
@@ -32,7 +32,7 @@ _ถึงญี่ปุ่น รับรถเช่า มื้อเย�
 
 _ทุ่งโคเคีย ตลาดปลา พิพิธภัณฑ์สัตว์น้ำ ปิดท้ายมื้อเย็นที่ Tonkame_
 
-**ไฮไลต์ของวันนี้:** [🌸 Hitachi Seaside Park](https://www.google.com/maps/search/?api=1&query=36.405864%2C140.5964868) · [🐟 Nakaminato Fish Market](https://www.google.com/maps/search/?api=1&query=36.3397734%2C140.5945563) · [🐬 Aqua World Oarai](https://www.google.com/maps/search/?api=1&query=36.3335755%2C140.5940179) · [🍱 Tonkame とんかめ](https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%8B%E3%82%81%20%E8%8C%A8%E5%9F%8E)
+**ไฮไลต์ของวันนี้:** [🌸 Hitachi Seaside Park](https://www.google.com/maps/search/?api=1&query=36.405864%2C140.5964868) · [🐟 Nakaminato Fish Market](https://www.google.com/maps/search/?api=1&query=36.3397734%2C140.5945563) · [🐬 Aqua World Oarai](https://www.google.com/maps/search/?api=1&query=36.3335755%2C140.5940179) · [🍱 Tonkame](https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%8B%E3%82%81%20%E8%8C%A8%E5%9F%8E)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
@@ -41,7 +41,7 @@ _ทุ่งโคเคีย ตลาดปลา พิพิธภัณ�
 | 12:00 | ขับไป **[Nakaminato Fish Market](https://www.google.com/maps/search/?api=1&query=36.3397734%2C140.5945563)** (20 นาที) |  |
 | 12:30 | ข้าวเที่ยงร้าน **[Kyuraku](https://www.google.com/maps/search/?api=1&query=%E4%B9%85%E6%A5%BD%20%E9%82%A3%E7%8F%82%E6%B9%8A%20%E8%8C%A8%E5%9F%8E)** — ซาชิมิ/ไคเซ็นด้ง | ควรโทรจองโต๊ะล่วงหน้า |
 | 14:00 | ขับ 5 นาทีไป **[Aqua World Oarai](https://www.google.com/maps/search/?api=1&query=36.3335755%2C140.5940179)** — โชว์โลมา/สิงโตทะเล | เช็ครอบโชว์ที่ทางเข้า |
-| 17:00 | ขับไปมื้อเย็นที่ **[Tonkame とんかめ](https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%8B%E3%82%81%20%E8%8C%A8%E5%9F%8E)** | ควรโทรจองโต๊ะ 11 คน |
+| 17:00 | ขับไปมื้อเย็นที่ **[Tonkame](https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%8B%E3%82%81%20%E8%8C%A8%E5%9F%8E)** | ควรโทรจองโต๊ะ 11 คน |
 | 19:00 | กลับที่พัก MOKURe แช่ออนเซ็นในบ้าน |  |
 
 > **💡 ทิป:** โคเคีย 8 ต.ค.: ต้นเดือนยังเป็นสีเขียวไล่แดง สวยคนละแบบและคนน้อยกว่ามาก เช็คสถานะสีก่อนไป 1 วัน
@@ -54,7 +54,7 @@ _ทุ่งโคเคีย ตลาดปลา พิพิธภัณ�
 
 _ตรงไปนิกโก้เลย เดินถนนคนเดิน แวะศาลเจ้าโทโชกุได้ถ้าอยากไป_
 
-**ไฮไลต์ของวันนี้:** [🌉 Shinkyo Bridge / ถนนคนเดิน](https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%A9%8B%20%E6%97%A5%E5%85%89) · [⛩️ Nikko Toshogu](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%E6%9D%B1%E7%85%A7%E5%AE%AE) · [🍜 蕎麦切り照月](https://www.google.com/maps/search/?api=1&query=%E8%95%8E%E9%BA%A6%E5%88%87%E3%82%8A%E7%85%A7%E6%9C%88%20%E6%97%A5%E5%85%89) · [🥩 レストランえんや](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%81%88%E3%82%93%E3%82%84)
+**ไฮไลต์ของวันนี้:** [🌉 Shinkyo Bridge / ถนนคนเดิน](https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%A9%8B%20%E6%97%A5%E5%85%89) · [⛩️ Nikko Toshogu](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%E6%9D%B1%E7%85%A7%E5%AE%AE) · [🍜 Sobakiri Shogetsu](https://www.google.com/maps/search/?api=1&query=%E8%95%8E%E9%BA%A6%E5%88%87%E3%82%8A%E7%85%A7%E6%9C%88%20%E6%97%A5%E5%85%89) · [🥩 Restaurant Enya](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%81%88%E3%82%93%E3%82%84)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
@@ -64,7 +64,7 @@ _ตรงไปนิกโก้เลย เดินถนนคนเดิ
 | 11:30 | เดินเล่น Nikko-kaido ถนนคนเดินในเมือง ชม **[Shinkyo Bridge สะพานแดง](https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E6%A9%8B%20%E6%97%A5%E5%85%89)** | เดินสบายๆ ไม่ต้องรีบ |
 | 13:00 | (ตัวเลือก) เดินขึ้น **[ศาลเจ้า Nikko Toshogu](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%E6%9D%B1%E7%85%A7%E5%AE%AE)** ใครสนใจประวัติศาสตร์/สถาปัตยกรรม | เดินเยอะ+บันไดเยอะ ไม่บังคับทั้งกรุ๊ป |
 | 15:00 | พักที่บ้าน / เดินช้อปของฝากในเมืองต่อ |  |
-| 18:00 | มื้อเย็น เลือกระหว่างโซบะที่ **[蕎麦切り照月](https://www.google.com/maps/search/?api=1&query=%E8%95%8E%E9%BA%A6%E5%88%87%E3%82%8A%E7%85%A7%E6%9C%88%20%E6%97%A5%E5%85%89)** หรือสเต็กที่ **[レストランえんや](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%81%88%E3%82%93%E3%82%84)** | ควรโทรจองโต๊ะ 11 คนล่วงหน้า |
+| 18:00 | มื้อเย็น เลือกระหว่างโซบะที่ **[Sobakiri Shogetsu](https://www.google.com/maps/search/?api=1&query=%E8%95%8E%E9%BA%A6%E5%88%87%E3%82%8A%E7%85%A7%E6%9C%88%20%E6%97%A5%E5%85%89)** หรือสเต็กที่ **[Restaurant Enya](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E5%85%89%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%81%88%E3%82%93%E3%82%84)** | ควรโทรจองโต๊ะ 11 คนล่วงหน้า |
 
 > **💡 ทิป:** ตัดสวนสนุกออกให้เป็นวันเบาๆ พักจากการขับรถ เดินเล่นถนนคนเดินกับคาเฟ่/ร้านขายของพื้นเมืองแทน
 
@@ -102,7 +102,7 @@ _แวะชีสการ์เด้นนิกโก้และ Shirasawa
 
 _เริ่มเช้าที่ YAMAIRO เดินเล่น Sainokawara ช้อปรอบเมือง_
 
-**ไฮไลต์ของวันนี้:** [🍳 YAMAIRO 朝ごはん](https://www.google.com/maps/search/?api=1&query=%E6%9C%9D%E3%81%94%E3%81%AF%E3%82%93YAMAIRO%20%E8%8D%89%E6%B4%A5) · [🌲 Sainokawara Park](https://www.google.com/maps/search/?api=1&query=36.6241602%2C138.5896634) · [💃 Netsunoyu](https://www.google.com/maps/search/?api=1&query=36.6227418%2C138.5962956) · [♨️ Yubatake](https://www.google.com/maps/search/?api=1&query=36.6229647%2C138.5967231)
+**ไฮไลต์ของวันนี้:** [🍳 YAMAIRO Breakfast](https://www.google.com/maps/search/?api=1&query=%E6%9C%9D%E3%81%94%E3%81%AF%E3%82%93YAMAIRO%20%E8%8D%89%E6%B4%A5) · [🌲 Sainokawara Park](https://www.google.com/maps/search/?api=1&query=36.6241602%2C138.5896634) · [💃 Netsunoyu](https://www.google.com/maps/search/?api=1&query=36.6227418%2C138.5962956) · [♨️ Yubatake](https://www.google.com/maps/search/?api=1&query=36.6229647%2C138.5967231)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
@@ -122,7 +122,7 @@ _เริ่มเช้าที่ YAMAIRO เดินเล่น Sainokawa
 
 _ออกไม่เกิน 8 โมง แวะ Onioshidashi เก็บกระเป๋า/ช้อป Uniqlo มื้อเย็น Uoshige_
 
-**ไฮไลต์ของวันนี้:** [🌋 Onioshidashi Volcanic Park](https://www.google.com/maps/search/?api=1&query=36.4448257%2C138.5370699) · [🧳 Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278) · [🛍️ Uniqlo Kawaguchiko](https://www.google.com/maps/search/?api=1&query=%E3%83%A6%E3%83%8B%E3%82%AF%E3%83%AD%20%E6%B2%B3%E5%8F%A3%E6%B9%96) · [🦑 Uoshige 海賊料理魚重](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E8%B3%8A%E6%96%99%E7%90%86%E9%AD%9A%E9%87%8D%20%E6%B2%B3%E5%8F%A3%E6%B9%96)
+**ไฮไลต์ของวันนี้:** [🌋 Onioshidashi Volcanic Park](https://www.google.com/maps/search/?api=1&query=36.4448257%2C138.5370699) · [🧳 Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278) · [🛍️ Uniqlo Kawaguchiko](https://www.google.com/maps/search/?api=1&query=%E3%83%A6%E3%83%8B%E3%82%AF%E3%83%AD%20%E6%B2%B3%E5%8F%A3%E6%B9%96) · [🦑 Uoshige](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E8%B3%8A%E6%96%99%E7%90%86%E9%AD%9A%E9%87%8D%20%E6%B2%B3%E5%8F%A3%E6%B9%96)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
@@ -132,7 +132,7 @@ _ออกไม่เกิน 8 โมง แวะ Onioshidashi เก็บ�
 | 10:30 | ขับต่อไป Kawaguchiko (~2.5–3 ชม. ขึ้นกับรถติด) |  |
 | 14:00 | รับกระเป๋าที่ **[Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278)** |  |
 | 14:30 | เช็คอินที่พัก / แวะช้อป **[Uniqlo Kawaguchiko](https://www.google.com/maps/search/?api=1&query=%E3%83%A6%E3%83%8B%E3%82%AF%E3%83%AD%20%E6%B2%B3%E5%8F%A3%E6%B9%96)** |  |
-| 18:00 | มื้อเย็นที่ **[Uoshige 海賊料理魚重](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E8%B3%8A%E6%96%99%E7%90%86%E9%AD%9A%E9%87%8D%20%E6%B2%B3%E5%8F%A3%E6%B9%96)** | ช่วงบ่าย-เย็นรถน่าจะติดเพราะวันหยุดยาว เผื่อเวลาเดินทางเยอะๆ |
+| 18:00 | มื้อเย็นที่ **[Uoshige](https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E8%B3%8A%E6%96%99%E7%90%86%E9%AD%9A%E9%87%8D%20%E6%B2%B3%E5%8F%A3%E6%B9%96)** | ช่วงบ่าย-เย็นรถน่าจะติดเพราะวันหยุดยาว เผื่อเวลาเดินทางเยอะๆ |
 
 > **⚠️ ข้อควรระวัง:** วันหยุดยาววันสุดท้าย ถนนขาเข้า Kawaguchiko ช่วงบ่าย–เย็นติดหนัก เผื่อเวลาเดินทางอย่างน้อย +1 ชม.
 
@@ -144,7 +144,7 @@ _ออกไม่เกิน 8 โมง แวะ Onioshidashi เก็บ�
 
 _เช้าส่งกระเป๋าเสื้อผ้าใช้แล้วกลับสนามบิน แล้วเดินเล่นหาดชิราโทริริมทะเลสาบ ถ่ายรูปฟูจิ บ่ายแวะฟาร์มมาไกโนะถ้ามีเวลา_
 
-**ไฮไลต์ของวันนี้:** [📦 Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278) · [🏖️ Shiratori Beach 白鳥浜](https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E6%B5%9C%20%E6%B2%B3%E5%8F%A3%E6%B9%96) · [🐄 Makaino Farm resort](https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%8B%E3%81%84%E3%81%AE%E7%89%A7%E5%A0%B4)
+**ไฮไลต์ของวันนี้:** [📦 Yamato Funatsu Center](https://www.google.com/maps/search/?api=1&query=35.4881234%2C138.7630278) · [🏖️ Shiratori Beach](https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E6%B5%9C%20%E6%B2%B3%E5%8F%A3%E6%B9%96) · [🐄 Makaino Farm resort](https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%8B%E3%81%84%E3%81%AE%E7%89%A7%E5%A0%B4)
 
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
@@ -176,7 +176,7 @@ _วันช็อปเอาต์เล็ตที่คุ้มที่�
 | 10:00 | เช็คเอาต์ ขับไป **[Gotemba Premium Outlets](https://www.google.com/maps/search/?api=1&query=35.307271%2C138.9656467)** (~1 ชม.) |  |
 | 11:00 | ช็อปเอาต์เล็ต + ข้าวเที่ยง | มีโซนเด็กเล่น + รถเข็นยืม |
 | 14:00 | ขับต่อไป Kamakura (~1 ชม. 30 นาที) |  |
-| 16:00 | เช็คอิน **[STELLA STORIA 由比ヶ浜](https://www.google.com/maps/search/?api=1&query=35.3105021%2C139.5412421)** |  |
+| 16:00 | เช็คอิน **[STELLA STORIA Yuigahama](https://www.google.com/maps/search/?api=1&query=35.3105021%2C139.5412421)** |  |
 | 17:00 | เดินเล่นหาด **[Yuigahama](https://www.google.com/maps/search/?api=1&query=%E7%94%B1%E6%AF%94%E3%83%B6%E6%B5%9C)** ดูพระอาทิตย์ตก | ทะเลใกล้บ้านมาก |
 
 > **💡 ทิป:** วันนี้คือวันช็อปแบรนด์เนม/รองเท้า/เสื้อผ้าเด็กที่คุ้มที่สุดของทริป เผื่อกระเป๋าไว้ด้วย
@@ -217,19 +217,19 @@ _เช้า-บ่ายเที่ยว Ueno Park จอดรถที่�
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
 | 08:15 | ออกจากบ้าน | ~30–45 นาที |
-| 09:00 | จอด 2 คันที่ 上野パーキングセンター | เดินถึงสวนสัตว์ ~6 นาที |
+| 09:00 | จอด 2 คันที่ Ueno Parking Center | เดินถึงสวนสัตว์ ~6 นาที |
 | 09:30 | **[สวนสัตว์อุเอโนะ](https://www.google.com/maps/search/?api=1&query=35.7160153%2C139.7728819)** — โซนตะวันออก: ช้าง เสือ หมี กอริลลา | เช็คสถานะแพนด้าก่อนไป |
 | 11:30 | โซนตะวันตก: บ่อนก ฮิปโป โซนแอฟริกา |  |
 | 12:30 | ข้าวเที่ยงในสวนสัตว์ หรือแถว Ueno Park |  |
 | 13:30 | เดิน 5 นาทีไป **[National Museum of Nature and Science](https://www.google.com/maps/search/?api=1&query=35.7164273%2C139.7763336)** |  |
-| 13:30 | เน้นโซน 地球館 โครงกระดูกไดโนเสาร์ | ดูไฮไลต์ 1.5–2 ชม. พอ |
+| 13:30 | เน้นโซน Global Gallery โครงกระดูกไดโนเสาร์ | ดูไฮไลต์ 1.5–2 ชม. พอ |
 | 16:00 | เดิน 5 นาทีไปเที่ยว **[ตลาด Ameyoko](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%A1%E6%A8%AA%E5%95%86%E5%BA%97%E8%A1%97)** | ของกิน/ของฝากเยอะ เดินง่าย ใกล้สถานี |
 | 17:30 | เดินกลับที่จอดรถ ขับกลับที่พัก |  |
 | เย็น | มื้อเย็น + พักผ่อน |  |
 
 > **💡 ทิป:** ค่าเข้ารวม 2 ที่ต่อผู้ใหญ่ ~1,230 เยน เด็ก 4 คนเข้าฟรีทั้งคู่
 
-> **⚠️ ข้อควรระวัง:** หลีกเลี่ยงลานจอดแบบ 機械式 (ลิฟต์ยกรถ) จำกัดความสูง Alphard เข้าไม่ได้
+> **⚠️ ข้อควรระวัง:** หลีกเลี่ยงลานจอดแบบลิฟต์ยกรถ จำกัดความสูง Alphard เข้าไม่ได้
 
 ---
 
