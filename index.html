@@ -190,11 +190,26 @@ table.overview td.theme b{font-weight:600;}
 .day-title{font-size:17px; font-weight:600;}
 .day-sub{color:var(--ink-muted); font-size:13px; margin-top:4px;}
 
-.table-scroll{overflow-x:auto;}
+.table-scroll{position:relative; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.table-scroll.scrollable::after{
+  content:"";
+  position:absolute;
+  top:0; right:0; bottom:0;
+  width:22px;
+  pointer-events:none;
+  background:linear-gradient(90deg, transparent, var(--surface));
+}
+.scroll-hint{
+  display:none;
+  font-size:11.5px;
+  color:var(--ink-muted);
+  padding:4px 18px 0;
+}
+.table-scroll.scrollable + .scroll-hint{display:block;}
 table.timetable{
-  width:100%;
   border-collapse:collapse;
-  min-width:480px;
+  width:max-content;
+  min-width:100%;
 }
 table.timetable thead th{
   text-align:left;
@@ -218,9 +233,9 @@ table.timetable td.time{
   font-weight:600;
   color:var(--accent);
   white-space:nowrap;
-  width:1%;
 }
-table.timetable td.note{font-size:12.5px;}
+table.timetable td.activity{white-space:nowrap;}
+table.timetable td.note{font-size:12.5px; white-space:nowrap;}
 table.timetable td.note a{
   display:inline-flex;
   align-items:center;
@@ -337,7 +352,7 @@ daysEl.innerHTML = DAYS.map((d,i) => {
       : '';
     return '<tr>'
       + '<td class="time">' + r[0] + '</td>'
-      + '<td>' + cleaned + '</td>'
+      + '<td class="activity">' + cleaned + '</td>'
       + '<td class="note">' + noteHtml + '</td>'
     + '</tr>';
   }).join('');
@@ -365,9 +380,14 @@ daysEl.innerHTML = DAYS.map((d,i) => {
       + '<thead><tr><th>เวลา</th><th>กิจกรรม</th><th>หมายเหตุ</th></tr></thead>'
       + '<tbody>' + rows + '</tbody>'
     + '</table></div>'
+    + '<div class="scroll-hint">← เลื่อนดูตารางทั้งหมด →</div>'
     + (notes ? '<div class="notes">' + notes + '</div>' : '')
   + '</section>';
 }).join('');
+
+document.querySelectorAll('.table-scroll').forEach(el => {
+  if (el.scrollWidth > el.clientWidth + 1) el.classList.add('scrollable');
+});
 </script>
 </body>
 </html>
