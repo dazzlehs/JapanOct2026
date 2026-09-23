@@ -37,6 +37,7 @@ body{
   font-size:15px;
   line-height:1.65;
   padding-inline:16px;
+  padding-bottom:40px;
 }
 h1,h2{font-family:'IBM Plex Sans Thai Looped',sans-serif; text-wrap:balance; margin:0;}
 .mono{font-family:'IBM Plex Mono',ui-monospace,monospace; font-variant-numeric:tabular-nums;}
@@ -190,7 +191,7 @@ table.overview td.theme b{font-weight:600;}
 .day-title{font-size:17px; font-weight:600;}
 .day-sub{color:var(--ink-muted); font-size:13px; margin-top:4px;}
 
-.table-scroll{position:relative; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.table-scroll{position:relative; overflow-x:auto; overflow-anchor:none; -webkit-overflow-scrolling:touch; padding-bottom:14px;}
 .table-scroll.scrollable::after{
   content:"";
   position:absolute;
@@ -203,7 +204,7 @@ table.overview td.theme b{font-weight:600;}
   display:none;
   font-size:11.5px;
   color:var(--ink-muted);
-  padding:4px 18px 0;
+  padding:4px 18px 14px;
 }
 .table-scroll.scrollable + .scroll-hint{display:block;}
 table.timetable{
@@ -248,28 +249,6 @@ table.timetable td.note a::after{content:"↗"; font-size:10px;}
 table.timetable td.note a + a{margin-top:4px;}
 table.timetable td.note .links{display:flex; flex-direction:column; gap:4px;}
 table.timetable b{font-weight:700;}
-
-.notes{padding:6px 18px 16px; display:flex; flex-direction:column; gap:8px;}
-.note-item{
-  display:flex;
-  gap:8px;
-  align-items:flex-start;
-  padding:8px 12px;
-  font-size:13px;
-  line-height:1.5;
-  border-left:3px solid transparent;
-  background:var(--surface-2);
-}
-.note-item.warn{border-left-color:var(--warn); background:var(--warn-soft); color:var(--warn);}
-.note-item.tip{border-left-color:var(--tip); background:var(--tip-soft); color:var(--tip);}
-.note-item b{font-weight:700;}
-
-footer{
-  padding-block:24px 40px;
-  color:var(--ink-muted);
-  font-size:12.5px;
-  text-align:center;
-}
 </style>
 </head>
 <body>
@@ -295,8 +274,6 @@ footer{
 
   <div class="section-label">รายละเอียดกิจกรรมรายวัน</div>
   <div id="days"></div>
-
-  <footer>สรุปจากแผนเที่ยว 7–19 ต.ค. 2026 · แตะลิงก์ในช่องหมายเหตุเพื่อเปิด Google Maps</footer>
 </div>
 
 <script>
@@ -357,16 +334,6 @@ daysEl.innerHTML = DAYS.map((d,i) => {
     + '</tr>';
   }).join('');
 
-  const notes = (d.tips || []).map(t => {
-    const cls = t.type === 'warn' ? 'warn' : 'tip';
-    const mark = t.type === 'warn' ? '⚠' : '💡';
-    const label = t.type === 'warn' ? 'ข้อควรระวัง' : 'ทิป';
-    return '<div class="note-item ' + cls + '">'
-      + '<span>' + mark + '</span>'
-      + '<span><b>' + label + ':</b> ' + t.text + '</span>'
-    + '</div>';
-  }).join('');
-
   return '<section class="day-board" id="day-' + (i+1) + '">'
     + '<div class="day-head">'
       + '<div class="day-num">' + dateNum(d.date) + '</div>'
@@ -381,7 +348,6 @@ daysEl.innerHTML = DAYS.map((d,i) => {
       + '<tbody>' + rows + '</tbody>'
     + '</table></div>'
     + '<div class="scroll-hint">← เลื่อนดูตารางทั้งหมด →</div>'
-    + (notes ? '<div class="notes">' + notes + '</div>' : '')
   + '</section>';
 }).join('');
 
