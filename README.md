@@ -32,3 +32,5 @@ git push -u origin main
 ข้อมูลแต่ละวันอยู่ในตัวแปร `days` ใน `<script>` ท้ายไฟล์ `index.html` แต่ละวันมี `gallery` (การ์ดสถานที่ไฮไลต์ฝั่งซ้าย), `table` (ตารางเวลาฝั่งขวา) และ `tips` แก้ตรงนั้นแล้ว commit + push ใหม่ได้เลย Vercel จะ deploy อัตโนมัติทุกครั้งที่ push เข้า branch main
 
 ลิงก์ไป Google Maps ใช้ฟังก์ชัน `P('ชื่อสถานที่', 'lat,lng')` หรือ `P('ชื่อสถานที่', 'คำค้นหา')` ถ้าไม่มีพิกัด — ใส่ในข้อความ `table` และในการ์ด `gallery` ใช้ฟิลด์ `q` แบบเดียวกัน
+
+ฉากอนิเมชั่นเล็กๆ ที่หัวการ์ดแต่ละวันอยู่ในตัวแปร `SCENES` (เรียงตามลำดับวันเดียวกับ `DAYS`) แต่ละตัวคือ `[อีโมจิ, ท่าขยับ, ตำแหน่งซ้าย %, ความสูงจากพื้น px, ขนาด px, ดีเลย์ วินาที, ความยาว วินาที]` ท่าที่มี: bob, sway, hop, wave, pulse, twinkle, rise, fall, drop, jump, swim, drive, fly, takeoff, roll, stomp, wand, broom, swing

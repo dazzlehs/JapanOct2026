@@ -418,6 +418,76 @@ table.timetable td.note a:hover::after{transform:translate(2px,-2px);}
 .leaf-toggle{bottom:74px;}
 .leaf-toggle.off{filter:grayscale(1); opacity:.55;}
 
+/* ---- Per-day mini scenes ---- */
+.day-head{flex-wrap:wrap;}
+.day-head > .day-text{flex:1 1 260px; min-width:0;}
+.scene{
+  position:relative;
+  flex:0 0 190px; height:74px;
+  margin-left:auto;
+  border-radius:12px;
+  overflow:hidden;
+  background:var(--sky, linear-gradient(#eef4fb, #f8fafc));
+  box-shadow:inset 0 0 0 1px rgba(20,22,26,.05);
+}
+.scene::after{ /* ground */
+  content:""; position:absolute; left:0; right:0; bottom:0; height:12px;
+  background:var(--ground, rgba(20,22,26,.04));
+}
+@media (max-width:600px){
+  .scene{flex-basis:100%; height:64px; margin-left:0;}
+}
+.sc{
+  position:absolute; z-index:1;
+  line-height:1;
+  display:inline-block;
+  animation-duration:var(--t,3s);
+  animation-delay:var(--d,0s);
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-in-out;
+  animation-play-state:paused;
+  transform-origin:50% 100%;
+}
+.scene.playing .sc{animation-play-state:running;}
+.sc.bob{animation-name:sc-bob; animation-direction:alternate;}
+.sc.sway{animation-name:sc-sway; animation-direction:alternate;}
+.sc.hop{animation-name:sc-hop;}
+.sc.wave{animation-name:sc-wave; transform-origin:70% 90%;}
+.sc.pulse{animation-name:sc-pulse;}
+.sc.twinkle{animation-name:sc-twinkle;}
+.sc.rise{animation-name:sc-rise; animation-timing-function:ease-out;}
+.sc.fall{animation-name:sc-fall; animation-timing-function:linear;}
+.sc.drop{animation-name:sc-drop; animation-timing-function:cubic-bezier(.5,0,.75,0);}
+.sc.jump{animation-name:sc-jump; animation-timing-function:linear;}
+.sc.swim{animation-name:sc-swim; animation-timing-function:linear;}
+.sc.drive{animation-name:sc-drive; animation-timing-function:linear;}
+.sc.fly{animation-name:sc-fly; animation-timing-function:linear;}
+.sc.takeoff{animation-name:sc-takeoff; animation-timing-function:ease-in;}
+.sc.roll{animation-name:sc-roll; transform-origin:50% 50%;}
+.sc.stomp{animation-name:sc-stomp;}
+.sc.wand{animation-name:sc-wand; transform-origin:15% 85%;}
+.sc.broom{animation-name:sc-broom; animation-timing-function:linear;}
+.sc.swing{animation-name:sc-swing; transform-origin:50% 0; animation-direction:alternate;}
+@keyframes sc-bob{from{transform:translateY(0);} to{transform:translateY(-5px);}}
+@keyframes sc-sway{from{transform:rotate(-9deg);} to{transform:rotate(9deg);}}
+@keyframes sc-hop{0%,55%,100%{transform:translateY(0) scale(1,1);} 15%{transform:translateY(0) scale(1.1,.88);} 32%{transform:translateY(-16px) scale(.95,1.06);} 50%{transform:translateY(0) scale(1.08,.92);}}
+@keyframes sc-wave{0%,60%,100%{transform:rotate(0);} 10%,30%{transform:rotate(18deg);} 20%,40%{transform:rotate(-8deg);}}
+@keyframes sc-pulse{0%,100%{transform:scale(1);} 50%{transform:scale(1.15);}}
+@keyframes sc-twinkle{0%,100%{transform:scale(0) rotate(0); opacity:0;} 40%{transform:scale(1) rotate(45deg); opacity:1;} 70%{transform:scale(.4) rotate(90deg); opacity:.6;}}
+@keyframes sc-rise{0%{transform:translateY(4px) scale(.5); opacity:0;} 25%{opacity:.85;} 100%{transform:translateY(-40px) scale(1.4); opacity:0;}}
+@keyframes sc-fall{0%{transform:translate(0,-30px) rotate(0); opacity:0;} 10%{opacity:1;} 100%{transform:translate(18px,90px) rotate(300deg); opacity:.2;}}
+@keyframes sc-drop{0%{transform:translateY(-44px); opacity:0;} 10%{opacity:1;} 70%,100%{transform:translateY(0); opacity:1;} }
+@keyframes sc-jump{0%,45%{transform:translate(0,30px) rotate(20deg); opacity:0;} 50%{opacity:1;} 72%{transform:translate(-24px,-6px) rotate(-10deg);} 95%{transform:translate(-48px,30px) rotate(-45deg); opacity:1;} 100%{transform:translate(-48px,36px) rotate(-50deg); opacity:0;}}
+@keyframes sc-swim{0%{transform:translateX(0) scaleX(1);} 48%{transform:translateX(-46px) scaleX(1);} 50%{transform:translateX(-46px) scaleX(-1);} 98%{transform:translateX(0) scaleX(-1);} 100%{transform:translateX(0) scaleX(1);}}
+@keyframes sc-drive{0%{transform:translate(120px,0);} 25%{transform:translate(60px,-1px);} 50%{transform:translate(0,0);} 75%{transform:translate(-60px,-1px);} 100%{transform:translate(-120px,0);}}
+@keyframes sc-fly{0%{transform:translate(-110px,22px) rotate(8deg);} 100%{transform:translate(130px,-26px) rotate(8deg);}}
+@keyframes sc-takeoff{0%,15%{transform:translate(0,0); opacity:1;} 100%{transform:translate(120px,-60px); opacity:0;}}
+@keyframes sc-roll{0%,20%{transform:translateX(0) rotate(0);} 50%{transform:translateX(26px) rotate(360deg);} 70%{transform:translateX(26px) rotate(360deg);} 100%{transform:translateX(0) rotate(0);}}
+@keyframes sc-stomp{0%,100%{transform:translateY(0) rotate(0);} 25%{transform:translateY(-6px) rotate(-6deg);} 50%{transform:translateY(0) rotate(0);} 75%{transform:translateY(-6px) rotate(6deg);}}
+@keyframes sc-wand{0%,100%{transform:rotate(0);} 20%{transform:rotate(-25deg);} 40%{transform:rotate(15deg);} 60%{transform:rotate(-10deg);}}
+@keyframes sc-broom{0%{transform:translate(-120px,10px);} 50%{transform:translate(10px,-8px);} 100%{transform:translate(140px,10px);}}
+@keyframes sc-swing{from{transform:rotate(-12deg);} to{transform:rotate(12deg);}}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important;}
   .leaves,.leaf-toggle{display:none;}
@@ -510,6 +580,31 @@ overviewBody.innerHTML = DAYS.map((d,i) =>
   + '</tr>'
 ).join('');
 
+/* Per-day mini scenes: [emoji, animation, left%, bottom px, size px, delay s, duration s] */
+const SCENES = [
+  {sky:'linear-gradient(#dbeafe,#f1f6ff)', items:[['☁️','bob',12,44,18,0,3],['☁️','bob',70,48,14,1,4],['✈️','fly',38,20,24,0,5],['🚗','drive',44,6,20,0,6],['🚙','drive',44,6,20,1.2,6]]},
+  {sky:'linear-gradient(#e0f2fe,#fef3f2)', ground:'#fca5a5', items:[['🌊','bob',62,0,22,0,2],['🌊','bob',80,0,22,.6,2],['🐬','jump',86,8,22,0,3],['🌺','sway',6,8,18,0,2],['🌸','sway',18,8,16,.4,2.2],['🌺','sway',30,8,18,.8,1.9],['🌼','sway',42,8,15,.3,2.4]]},
+  {sky:'linear-gradient(#fff1e6,#fffaf5)', items:[['⛩️','bob',12,8,28,0,3],['🌉','bob',52,6,30,1,4],['🍁','fall',30,40,14,0,4],['🍁','fall',70,40,13,1.5,4.5],['🍂','fall',88,40,13,3,5]]},
+  {sky:'linear-gradient(#fef9c3,#fffdf0)', items:[['⛰️','bob',70,8,30,0,6],['🧀','hop',10,8,22,0,1.6],['🍰','hop',24,8,18,.4,1.6],['🚐','drive',44,6,22,0,7],['♨️','pulse',86,8,18,0,2]]},
+  {sky:'linear-gradient(#fde2e4,#fff7f5)', ground:'#bae6fd', items:[['🐒','bob',40,6,26,0,1.4],['💨','rise',30,30,14,0,3],['💨','rise',50,30,14,1,3],['💨','rise',70,30,14,2,3],['♨️','pulse',12,8,22,0,2],['🪵','sway',82,8,20,0,.8]]},
+  {sky:'linear-gradient(#ede9fe,#f8fafc)', items:[['🌋','bob',8,8,30,0,5],['💨','rise',10,34,14,0,3],['💨','rise',14,34,12,1.5,3],['🗻','bob',74,8,30,0,6],['🚗','drive',44,6,20,0,6],['🛍️','hop',58,8,18,0,1.8]]},
+  {sky:'linear-gradient(#e0f2fe,#f0fdfa)', ground:'#a5f3fc', items:[['🗻','bob',8,10,32,0,6],['🦢','swim',60,6,20,0,6],['🦢','swim',80,6,16,1,7],['🐐','hop',40,8,18,0,1.8],['🌤️','bob',84,46,16,0,3]]},
+  {sky:'linear-gradient(#f3e8ff,#fdf4ff)', items:[['🌿','sway',30,40,16,0,2],['🍇','drop',32,8,18,0,2.4],['🍇','drop',46,8,18,.8,2.4],['🍇','drop',60,8,18,1.6,2.4],['🧺','bob',44,6,26,0,2],['🌆','bob',82,8,24,0,4]]},
+  {sky:'linear-gradient(#1e1b4b,#3730a3)', ground:'rgba(255,255,255,.08)', items:[['🏰','bob',8,8,30,0,6],['🪄','wand',44,14,24,0,2],['✨','twinkle',58,36,14,0,1.6],['✨','twinkle',66,22,10,.5,1.6],['⭐','twinkle',30,50,10,.9,2],['🧹','broom',50,26,22,0,5],['🗼','bob',86,8,24,0,5]]},
+  {sky:'linear-gradient(#dcfce7,#f7fee7)', items:[['🎋','sway',4,8,24,0,2.5],['🐼','roll',22,8,24,0,4],['🦖','stomp',58,8,26,0,1.2],['🐘','bob',80,8,24,0,2],['🦴','bob',44,8,14,.5,2]]},
+  {sky:'linear-gradient(#fce7f3,#fdf2f8)', items:[['🛍️','swing',14,26,24,0,1.2],['🛍️','swing',30,22,20,.3,1.4],['🎮','hop',56,8,22,0,1.6],['🤖','stomp',76,8,22,0,1.4],['✨','twinkle',46,44,12,0,1.8],['💸','fall',88,40,14,.6,3]]},
+  {sky:'linear-gradient(#cffafe,#fef2f2)', ground:'#7dd3fc', items:[['🐬','jump',44,8,22,0,3],['🫧','rise',20,10,12,0,3],['🫧','rise',30,10,10,1.2,3],['⛩️','bob',62,8,26,0,5],['🏮','swing',80,36,20,0,1.6],['🍲','pulse',90,8,18,0,2]]},
+  {sky:'linear-gradient(#fef3c7,#e0f2fe)', items:[['✈️','takeoff',8,10,24,0,3.5],['🧳','hop',52,8,20,0,1.6],['🧳','hop',64,8,18,.3,1.6],['👋','wave',82,10,22,0,2],['❤️','pulse',90,44,12,0,1.4]]}
+];
+function sceneHtml(i){
+  const sc = SCENES[i];
+  if (!sc) return '';
+  const items = sc.items.map(([e,a,x,y,size,d,t]) =>
+    '<span class="sc ' + a + '" style="left:' + x + '%;bottom:' + y + 'px;font-size:' + size + 'px;--d:' + (-d) + 's;--t:' + t + 's">' + e + '</span>'
+  ).join('');
+  return '<div class="scene" aria-hidden="true" style="' + (sc.sky ? '--sky:' + sc.sky + ';' : '') + (sc.ground ? '--ground:' + sc.ground : '') + '">' + items + '</div>';
+}
+
 daysEl.innerHTML = DAYS.map((d,i) => {
   const rows = d.table.map((r, ri) => {
     const {links, cleaned} = extractLinks(r[1]);
@@ -528,11 +623,12 @@ daysEl.innerHTML = DAYS.map((d,i) => {
   return '<section class="day-board reveal" id="day-' + (i+1) + '">'
     + '<div class="day-head">'
       + '<div class="day-num">' + dateNum(d.date) + '</div>'
-      + '<div>'
+      + '<div class="day-text">'
         + '<div class="day-date">' + cleanDate(d.date) + '</div>'
         + '<h2 class="day-title">' + d.title + '</h2>'
         + '<div class="day-sub">' + d.sub + '</div>'
       + '</div>'
+      + sceneHtml(i)
     + '</div>'
     + '<div class="table-scroll"><table class="timetable">'
       + '<thead><tr><th>เวลา</th><th>กิจกรรม</th><th>หมายเหตุ</th></tr></thead>'
@@ -600,6 +696,13 @@ document.querySelectorAll('.table-scroll').forEach(el => {
     }), {rootMargin: '0px 0px -8% 0px', threshold: 0.06});
     boards.forEach(b => io.observe(b));
   }
+  // Only run a day's scene while it is on screen
+  const scenes = document.querySelectorAll('.scene');
+  if ('IntersectionObserver' in window) {
+    const so = new IntersectionObserver(entries => entries.forEach(en =>
+      en.target.classList.toggle('playing', en.isIntersecting)));
+    scenes.forEach(el => so.observe(el));
+  } else scenes.forEach(el => el.classList.add('playing'));
   boards.forEach(b => b.addEventListener('animationend', () => b.classList.remove('flash')));
 
   // Scroll progress, scroll-spy, back-to-top ring
