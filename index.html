@@ -119,7 +119,6 @@ a{color:var(--accent);}
 table.overview{
   width:100%;
   border-collapse:collapse;
-  min-width:480px;
 }
 table.overview thead th{
   text-align:left;
@@ -149,6 +148,7 @@ table.overview td.num{
 }
 table.overview td.date{white-space:nowrap; color:var(--ink-muted);}
 table.overview td.theme b{font-weight:600;}
+@media (max-width:600px){ table.overview thead th, table.overview tbody td{padding-inline:8px;} }
 
 /* ---- Day boards ---- */
 .day-board{
@@ -191,26 +191,11 @@ table.overview td.theme b{font-weight:600;}
 .day-title{font-size:17px; font-weight:600;}
 .day-sub{color:var(--ink-muted); font-size:13px; margin-top:4px;}
 
-.table-scroll{position:relative; overflow-x:auto; overflow-anchor:none; -webkit-overflow-scrolling:touch; padding-bottom:14px;}
-.table-scroll.scrollable::after{
-  content:"";
-  position:absolute;
-  top:0; right:0; bottom:0;
-  width:22px;
-  pointer-events:none;
-  background:linear-gradient(90deg, transparent, var(--surface));
-}
-.scroll-hint{
-  display:none;
-  font-size:11.5px;
-  color:var(--ink-muted);
-  padding:4px 18px 14px;
-}
-.table-scroll.scrollable + .scroll-hint{display:block;}
+.table-scroll{padding-bottom:14px;}
 table.timetable{
   border-collapse:collapse;
-  width:max-content;
-  min-width:100%;
+  width:100%;
+  table-layout:fixed;
 }
 table.timetable thead th{
   text-align:left;
@@ -235,19 +220,26 @@ table.timetable td.time{
   color:var(--accent);
   white-space:nowrap;
 }
-table.timetable td.activity{white-space:nowrap;}
-table.timetable td.note{font-size:12.5px; white-space:nowrap;}
+table.timetable th:first-child{width:76px;}
+table.timetable th:last-child{width:38%;}
+table.timetable td{overflow-wrap:anywhere;}
+table.timetable td.note{font-size:12.5px;}
+@media (max-width:600px){
+  table.timetable thead th, table.timetable td{padding-inline:8px;}
+  table.timetable td:first-child, table.timetable th:first-child{padding-left:14px;}
+  table.timetable th:first-child{width:58px;}
+  table.timetable td.time{font-size:12.5px;}
+}
 table.timetable td.note a{
   display:inline-flex;
   align-items:center;
   gap:3px;
   text-decoration:none;
   font-weight:600;
-  white-space:nowrap;
 }
 table.timetable td.note a::after{content:"↗"; font-size:10px;}
 table.timetable td.note a + a{margin-top:4px;}
-table.timetable td.note .links{display:flex; flex-direction:column; gap:4px;}
+table.timetable td.note .links{display:flex; flex-direction:column; align-items:flex-start; gap:4px;}
 table.timetable b{font-weight:700;}
 
 /* =========================================================
@@ -519,12 +511,6 @@ table.timetable td.note a:hover::after{transform:translate(2px,-2px);}
 .info-card .kv{display:grid; grid-template-columns:auto 1fr; gap:3px 12px; font-size:13.5px;}
 .info-card .kv dt{color:var(--ink-muted);}
 .info-card .kv dd{margin:0; font-weight:500; overflow-wrap:anywhere;}
-.info-card ul{margin:0; padding-left:18px; font-size:13.5px;}
-.info-card li{margin-bottom:4px;}
-.info-card.warn{background:var(--warn-soft); border-color:#f3cfcb;}
-.info-card.warn h3{color:var(--warn);}
-.info-card.tip{background:var(--tip-soft); border-color:#efdcb8;}
-.info-card.tip h3{color:var(--tip);}
 .info-card label{display:flex; gap:8px; align-items:flex-start; cursor:pointer; margin-bottom:5px; font-size:13.5px;}
 .info-card input[type=checkbox]{margin-top:4px; accent-color:var(--accent); flex:none;}
 .info-card label:has(input:checked) span{text-decoration:line-through; color:var(--ink-muted);}
@@ -582,28 +568,11 @@ table.timetable td.note a:hover::after{transform:translate(2px,-2px);}
       <dl class="kv">
         <dt>โรงแรม</dt><dd>Chimelong Spaceship Hotel</dd>
         <dt>ห้อง</dt><dd>1 × Spaceship Twin Room · Family Package</dd>
+        <dt>ผู้เข้าพัก</dt><dd>ผู้ใหญ่ 2 + เด็ก 2 · แพ็กเกจรวมเด็ก 1 คน <b>ต้องซื้อเพิ่มอีก 1 คน</b></dd>
         <dt>เข้าพัก</dt><dd>5–8 ธ.ค. (3 คืน) · ใน booking ระบุ 17:00</dd>
         <dt>รวมใน<br>แพ็กเกจ</dt><dd>Chimelong Spaceship + Ocean Kingdom + Chimelong Show + บุฟเฟต์มื้อเย็น</dd>
         <dt>เงื่อนไข</dt><dd>ยกเลิกไม่ได้ · ฿19,464.60</dd>
       </dl>
-    </div>
-    <div class="info-card warn">
-      <h3>👧 นโยบายเด็ก (สำคัญ)</h3>
-      <ul>
-        <li>สวนสนุก + บุฟเฟต์: ฟรีเฉพาะเด็ก <b>อายุต่ำกว่า 3 ปี หรือสูงไม่ถึง 1.0 ม.</b> (ผู้ใหญ่ 1 คนพาได้ 1 คน)</li>
-        <li>Chimelong Show: <b>1 คน 1 ที่นั่ง 1 ตั๋ว</b> ไม่มีตั๋วเด็กฟรี</li>
-        <li>น้อง 6 ขวบและ 5 ขวบน่าจะสูงเกิน 1.0 ม. → <b>เช็ค voucher ว่า Family Package รวมตั๋วเด็ก 2 คนหรือยัง</b> ถ้ายังต้องซื้อเพิ่ม</li>
-      </ul>
-    </div>
-    <div class="info-card tip">
-      <h3>💡 เงิน · เน็ต · ข้ามด่าน</h3>
-      <ul>
-        <li>คนไทยเข้ามาเก๊าและจีนไม่ต้องใช้วีซ่า (ไม่เกิน 30 วัน) — เช็คกฎล่าสุดอีกครั้งก่อนบิน</li>
-        <li>ฝั่งจีนจ่ายด้วย <b>Alipay / WeChat Pay</b> แทบทุกที่ ผูกบัตรไทยไว้ก่อน</li>
-        <li>แท็กซี่มาเก๊ารับเงินสด MOP/HKD เป็นหลัก พกเงินสดติดตัวไว้</li>
-        <li>ใช้โรมมิ่ง/eSIM จากไทย จะใช้ Google, LINE ได้ตามปกติ · เรียกรถฝั่งจีนใช้ DiDi (มีใน Alipay)</li>
-        <li>อากาศ ธ.ค. ประมาณ 14–22°C แดดดีแต่ลมเย็น พกเสื้อแขนยาว/แจ็กเก็ตบาง</li>
-      </ul>
     </div>
     <div class="info-card">
       <h3>✅ เตรียมก่อนไป</h3>
@@ -690,11 +659,11 @@ const DAYS = [
       ['13:00', 'เที่ยวต่อในยานอวกาศ', 'ส่วนใหญ่อยู่ในร่ม ไม่ต้องกลัวแดด/ฝน'],
       ['15:30', 'กลับโรงแรม พักงีบ / เล่นน้ำ', 'ให้เด็กมีแรงดูโชว์ตอนค่ำ'],
       ['18:00', 'มื้อเย็น (บุฟเฟต์ ถ้ายังไม่ได้ใช้สิทธิ์)', 'กินให้เสร็จก่อนโชว์ 45 นาที'],
-      ['19:30', 'ดู <b>Chimelong Show</b>', 'เวลาและสถานที่ดูใน voucher · ทุกคนต้องมีตั๋ว'],
+      ['19:30', 'ดู <b>Chimelong Show</b>', 'เวลาและสถานที่ดูใน voucher'],
       ['21:30', 'กลับห้อง แพ็คกระเป๋าเตรียมกลับ', '']
     ],
     tips: [
-      {type: 'warn', t: 'Chimelong Show ไม่มีตั๋วเด็กฟรี น้องทั้งสองต้องมีตั๋วของตัวเอง — เช็คให้ชัวร์ตอนเช็คอิน'}
+      {type: 'warn', t: 'Family Package รวมเด็กแค่ 1 คน — ตั๋วเด็กคนที่ 2 ต้องซื้อเพิ่ม (Chimelong Show ไม่มีตั๋วเด็กฟรี)'}
     ]
   },
   {
@@ -719,7 +688,7 @@ const DAYS = [
 
 const CHECKLIST = [
   'พาสปอร์ตอายุเหลือเกิน 6 เดือน ครบ 4 เล่ม',
-  'เช็ค voucher: Family Package รวมตั๋วเด็ก 2 คน (สวนสนุก + โชว์ + บุฟเฟต์) หรือยัง',
+  'ซื้อตั๋วเด็กเพิ่ม 1 คน (Family Package รวมเด็กแค่ 1 คน) — สวนสนุก + โชว์ + บุฟเฟต์',
   'ตั้ง Alipay / WeChat Pay และผูกบัตร',
   'สมัครโรมมิ่งหรือซื้อ eSIM ที่ใช้ในจีน + มาเก๊า',
   'แลกเงินสด MOP/HKD สำหรับแท็กซี่มาเก๊า',
@@ -832,14 +801,10 @@ daysEl.innerHTML = DAYS.map((d,i) => {
       + '<thead><tr><th>เวลา</th><th>กิจกรรม</th><th>หมายเหตุ</th></tr></thead>'
       + '<tbody>' + rows + '</tbody>'
     + '</table></div>'
-    + '<div class="scroll-hint">← เลื่อนดูตารางทั้งหมด →</div>'
     + (tips ? '<div class="day-tips">' + tips + '</div>' : '')
   + '</section>';
 }).join('');
 
-document.querySelectorAll('.table-scroll').forEach(el => {
-  if (el.scrollWidth > el.clientWidth + 1) el.classList.add('scrollable');
-});
 
 /* ---------- Animations & micro-interactions ---------- */
 (function(){
